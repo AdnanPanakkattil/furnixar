@@ -20,11 +20,9 @@
 
     <header id="site-header">
 
-        <!-- TOP BAR -->
         <div id="header-top">
             <div class="top-inner">
 
-                <!-- LEFT: info links -->
                 <nav class="top-left">
                     <a href="#"><i class="bi bi-shop"></i> FRANCHISEE</a>
                     <a href="#"><i class="bi bi-telephone"></i> 18002093242</a>
@@ -32,14 +30,12 @@
                     <a href="#"><i class="bi bi-truck"></i> TRACK YOUR ORDER</a>
                 </nav>
 
-                <!-- CENTER: logo -->
                 <a class="top-center-logo" href="#">
                     <div class="logo-oval">
                         <img src="{{ asset('assets/imglogo/furnixar_logo.png') }}" alt="Furnixar Logo">
                     </div>
                 </a>
 
-                <!-- RIGHT: action buttons -->
                 <div class="top-right">
                     <a href="#" class="top-action-btn locate">
                         <i class="bi bi-geo-alt-fill"></i>
@@ -60,24 +56,19 @@
             </div>
         </div>
 
-        <!-- ══════════════════════════════
-       BOTTOM NAV BAR
-  ══════════════════════════════ -->
+
         <div id="header-bottom">
             <div class="bottom-inner">
 
-                <!-- Hamburger (mobile only) -->
                 <button class="hamburger-btn" id="hamburgerBtn" aria-label="Toggle menu">
                     <i class="bi bi-list"></i>
                 </button>
 
-                <!-- Search -->
                 <div class="search-box">
                     <i class="bi bi-search"></i>
                     <input type="text" placeholder="Search furniture…" />
                 </div>
 
-                <!-- Category nav -->
                 <div class="cat-nav-wrapper">
                     <nav class="cat-nav" id="catNav">
 
@@ -414,9 +405,7 @@
 
     </header>
 
-    <!-- ══════════════════════════════════════
-     MOBILE DRAWER
-══════════════════════════════════════ -->
+    <!--  MOBILE DRAWER -->
     <div class="mobile-drawer" id="mobileDrawer">
         <div class="drawer-overlay" id="drawerOverlay"></div>
         <div class="drawer-panel">
@@ -636,7 +625,6 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
     <script>
-        /* ── Scroll-hide top bar ── */
         const headerTop = document.getElementById('header-top');
         const siteHeader = document.getElementById('site-header');
 
