@@ -4,7 +4,6 @@
        --green-light: rgba(22, 156, 92, 0.10);
        --black: #111111;
        --white: #ffffff;
-       --grey-bg: #f6f6f6;
        --grey-border: #e4e4e4;
        --grey-text: #555555;
        --text-main: #222222;
@@ -24,9 +23,6 @@
        background: var(--grey-bg);
    }
 
-   /* ═══════════════════════════════════════
-       SITE HEADER WRAPPER
-    ═══════════════════════════════════════ */
    #site-header {
        position: fixed;
        top: 0;
@@ -37,9 +33,6 @@
        box-shadow: 0 2px 10px rgba(0, 0, 0, .09);
    }
 
-   /* ═══════════════════════════════════════
-       HEADER 1 — TOP BAR
-    ═══════════════════════════════════════ */
    #header-top {
        background: var(--white);
        border-bottom: 1px solid var(--grey-border);
@@ -65,7 +58,6 @@
        position: relative;
    }
 
-   /* ── LEFT: utility info links ── */
    .top-left {
        display: flex;
        align-items: center;
@@ -98,7 +90,6 @@
        background: var(--green-light);
    }
 
-   /* ── CENTER: logo ── */
    .top-center-logo {
        position: absolute;
        left: 50%;
@@ -122,7 +113,6 @@
        display: block;
    }
 
-   /* ── RIGHT: action icons ── */
    .top-right {
        display: flex;
        align-items: center;
@@ -191,9 +181,6 @@
        background: #e63946;
    }
 
-   /* ═══════════════════════════════════════
-       HEADER 2 — BOTTOM NAV BAR
-    ═══════════════════════════════════════ */
    #header-bottom {
        background: var(--white);
        border-top: 1px solid var(--grey-border);
@@ -304,9 +291,6 @@
        flex-shrink: 0;
    }
 
-   /* ═══════════════════════════════════════
-       MEGA DROPDOWN
-    ═══════════════════════════════════════ */
    .mega-menu {
        display: none;
        position: fixed;
@@ -397,9 +381,6 @@
        padding-left: 10px;
    }
 
-   /* ═══════════════════════════════════════
-       MOBILE DRAWER
-    ═══════════════════════════════════════ */
    .mobile-drawer {
        display: none;
        position: fixed;
@@ -561,10 +542,6 @@
        background: var(--green-light);
    }
 
-
-   /* ═══════════════════════════════════════
-       RESPONSIVE
-    ═══════════════════════════════════════ */
    @media (max-width: 1199px) {
        .top-left a:nth-child(n+3) {
            display: none;

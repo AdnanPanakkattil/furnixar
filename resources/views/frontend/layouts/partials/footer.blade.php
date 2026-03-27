@@ -12,7 +12,7 @@
 
                     <div class="d-flex flex-column align-items-start gap-1">
                         <a href="tel:+12025550172" class="contact-pill">
-                            <i class="bi bi-telephone"></i> +1-202-555-0172
+                            <i class="bi bi-telephone"></i> +91 1234567890
                         </a>
                         <a href="mailto:contact@cozycorner" class="contact-pill">
                             <i class="bi bi-envelope"></i> contact@cozycorner

@@ -46,7 +46,7 @@
                         <span>Wishlist</span>
                         <span class="btn-badge red">3</span>
                     </a>
-                    <a href="#" class="top-action-btn cart">
+                    <a href="{{ url('cart') }}" class="top-action-btn cart">
                         <i class="bi bi-cart-fill"></i>
                         <span>Cart</span>
                         <span class="btn-badge">2</span>
