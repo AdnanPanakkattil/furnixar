@@ -3,8 +3,8 @@
 @section('content')
 
     <!-- ═══════════════════════════════════════════════
-         SECTION 1 — HERO CAROUSEL
-    ════════════════════════════════════════════════ -->
+             SECTION 1 — HERO CAROUSEL
+        ════════════════════════════════════════════════ -->
     <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active" aria-current="true"
@@ -54,8 +54,8 @@
 
 
     <!-- ═══════════════════════════════════════════════
-         SECTION 2 — SHOP BY CATEGORY
-    ════════════════════════════════════════════════ -->
+             SECTION 2 — SHOP BY CATEGORY
+        ════════════════════════════════════════════════ -->
     <div class="section-wrapper">
         <h2 class="section-title">Shop by top categories</h2>
         <div class="categories-row">
@@ -103,80 +103,8 @@
 
 
     <!-- ═══════════════════════════════════════════════
-         SECTION 3 — SALE BANNER + AUTO CAROUSEL
-         Right panel: arrows REMOVED, auto-scroll only
-    ════════════════════════════════════════════════ -->
-    <section class="banner-section">
-
-        <!-- LEFT: SALE BANNER -->
-        <div class="left-panel">
-            <img class="bg" src="{{ asset('assets/homeimages/OIP (8).webp') }}"
-                alt="Couple relaxing on sofa">
-            <div class="left-overlay"></div>
-            <div class="left-content">
-                <span class="badge-ending">⏰ Ending Tomorrow</span>
-                <p class="invest-label">Invest In</p>
-                <h1 class="main-title">EVERYDAY<br><span class="highlight">LIVING</span></h1>
-                <span class="sale-word">Sale</span>
-                <div class="divider"></div>
-                <div class="offer-row">
-                    <div class="offer-chip">
-                        <span class="offer-upto">Upto</span>
-                        <span class="offer-percent">70</span>
-                        <span class="offer-suffix">% Off</span>
-                    </div>
-                    <span class="offer-sep">+</span>
-                    <div class="cashback-chip">
-                        <span class="offer-percent">20</span>
-                        <span class="offer-suffix">%</span>
-                        <span class="cashback-label">Cashback</span>
-                    </div>
-                </div>
-                <p class="free-ship">Free Shipping Sitewide</p>
-            </div>
-            <span class="tac">*T&amp;C Apply</span>
-        </div>
-
-        <!-- RIGHT: AUTO-SCROLL ONLY (no arrows) -->
-        <div class="right-panel" id="rightPanel">
-            <div class="right-content">
-                <h2 class="right-heading">Room Feels Flat?<br>Add The Top Glow</h2>
-                <p class="right-sub">Min. 30% Off On Ceiling Lights</p>
-            </div>
-            <div class="slides-track" id="slidesTrack">
-                <div class="slide">
-                    <img src="https://images.unsplash.com/photo-1524484485831-a92ffc0de03f?w=800&auto=format&fit=crop"
-                        alt="Pendant lights">
-                    <div class="slide-overlay"></div>
-                </div>
-                <div class="slide">
-                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&auto=format&fit=crop&q=80"
-                        alt="Modern ceiling lamp">
-                    <div class="slide-overlay"></div>
-                </div>
-                <div class="slide">
-                    <img src="https://images.unsplash.com/photo-1567016432779-094069958ea5?w=800&auto=format&fit=crop"
-                        alt="Living room lighting">
-                    <div class="slide-overlay"></div>
-                </div>
-                <div class="slide">
-                    <img src="https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?w=800&auto=format&fit=crop"
-                        alt="Warm pendant lights">
-                    <div class="slide-overlay"></div>
-                </div>
-            </div>
-            <!-- Dots only — no arrows -->
-            <div class="dots" id="rightDots"></div>
-            <span class="right-tac">*T&amp;C Apply</span>
-        </div>
-
-    </section>
-    <!-- / SECTION 3 -->
-
-
-    <!-- ═══════════════════════════════════════════════
-         SECTION 4 — LATEST PRODUCTS
-    ════════════════════════════════════════════════ -->
+             SECTION 4 — LATEST PRODUCTS
+        ════════════════════════════════════════════════ -->
     <section class="products-section">
         <div class="products-list">
             <div class="d-flex justify-content-between align-items-center mb-3">
@@ -330,34 +258,9 @@
 
 
     <!-- ═══════════════════════════════════════════════
-         SECTION 5 — PARALLAX ENVIRONMENT BANNER
-         Height reduced (min-height: 55vh)
-    ════════════════════════════════════════════════ -->
-    <section class="parallax-section">
-        <div class="parallax-content">
-            <div class="env-badge">We care about environment</div>
-            <h2 class="headline">
-                When creating our furniture, we care about
-                the environment. <span class="accent">We do not produce</span> waste
-                that ends up in landfills. We use even the
-                smallest residues during production
-            </h2>
-            <a href="#" class="cta-btn">
-                About CozyCorner
-                <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                    stroke-linejoin="round">
-                    <path d="M3 8h10M9 4l4 4-4 4" />
-                </svg>
-            </a>
-        </div>
-    </section>
-    <!-- / SECTION 5 -->
-
-
-    <!-- ═══════════════════════════════════════════════
-         SECTION 6 — LATEST OFFERS
-         All cards have original price + sale price + % badge
-    ════════════════════════════════════════════════ -->
+             SECTION 6 — LATEST OFFERS
+             All cards have original price + sale price + % badge
+        ════════════════════════════════════════════════ -->
     <section class="products-section">
         <div class="products-list">
             <div class="d-flex justify-content-between align-items-center mb-3">
@@ -521,23 +424,45 @@
 
 
     <!-- ═══════════════════════════════════════════════
-         SECTION 7 — CUSTOMER TESTIMONIALS
-    ════════════════════════════════════════════════ -->
-    <svg style="display:none" xmlns="http://www.w3.org/2000/svg">
-        <symbol id="star-full" viewBox="0 0 24 24">
-            <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26" />
-        </symbol>
-        <symbol id="star-half" viewBox="0 0 24 24">
-            <defs>
-                <linearGradient id="half-grad" x1="0" x2="1" y1="0" y2="0">
-                    <stop offset="50%" stop-color="#2e7d52" />
-                    <stop offset="50%" stop-color="#b8d4c5" />
-                </linearGradient>
-            </defs>
-            <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"
-                fill="url(#half-grad)" />
-        </symbol>
-    </svg>
+             SECTION 8 — ABOUT / STUDIO HERO
+        ════════════════════════════════════════════════ -->
+    <section class="studio-hero">
+        <div class="studio-copy">
+            <p class="studio-eyebrow"><span></span>furnixar Studio</p>
+            <h1 class="studio-headline">
+                Specializes in artisanal,<br>
+                handcrafted furniture, blending
+                <em>traditional</em> woodworking techniques!
+            </h1>
+            <p class="studio-body">
+                With contemporary design to create timeless pieces that add warmth
+                and character to any space.
+            </p>
+            <a href="#about" class="studio-cta">
+                About CozyCorner
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </a>
+        </div>
+        <div class="studio-media">
+            <div class="studio-dot"></div>
+            <img src="{{ asset('assets/homeimages/default-banner-10.jpg') }}" alt="Studio furniture">
+            <div class="studio-badge">
+                <div class="studio-badge-icon">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                        <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" stroke="#f7f4ef" stroke-width="1.8"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M9 22V12h6v10" stroke="#f7f4ef" stroke-width="1.8" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- / SECTION 8 -->
+
 
     <section class="tcs-section" aria-label="Customer testimonials">
         <div class="tcs-inner">
@@ -665,50 +590,11 @@
     <!-- / SECTION 7 -->
 
 
-    <!-- ═══════════════════════════════════════════════
-         SECTION 8 — ABOUT / STUDIO HERO
-    ════════════════════════════════════════════════ -->
-    <section class="studio-hero">
-        <div class="studio-copy">
-            <p class="studio-eyebrow"><span></span>furnixar Studio</p>
-            <h1 class="studio-headline">
-                Specializes in artisanal,<br>
-                handcrafted furniture, blending
-                <em>traditional</em> woodworking techniques!
-            </h1>
-            <p class="studio-body">
-                With contemporary design to create timeless pieces that add warmth
-                and character to any space.
-            </p>
-            <a href="#about" class="studio-cta">
-                About CozyCorner
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                    <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"
-                        stroke-linejoin="round" />
-                </svg>
-            </a>
-        </div>
-        <div class="studio-media">
-            <div class="studio-dot"></div>
-            <img src="{{ asset('assets/homeimages/default-banner-10.jpg') }}" alt="Studio furniture">
-            <div class="studio-badge">
-                <div class="studio-badge-icon">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
-                        <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" stroke="#f7f4ef" stroke-width="1.8"
-                            stroke-linecap="round" stroke-linejoin="round" />
-                        <path d="M9 22V12h6v10" stroke="#f7f4ef" stroke-width="1.8" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                    </svg>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- / SECTION 8 -->
 
 
     <!-- ═══════════════════════════════════════════════
-         SECTION 9 — FEATURES / WHY CHOOSE US
-    ════════════════════════════════════════════════ -->
+             SECTION 9 — FEATURES / WHY CHOOSE US
+        ════════════════════════════════════════════════ -->
     <section class="features-section">
         <div class="features-grid">
             <div class="feature-item">
@@ -768,8 +654,8 @@
 
 
     <!-- ═══════════════════════════════════════════════
-         PAGE SCRIPTS
-    ════════════════════════════════════════════════ -->
+             PAGE SCRIPTS
+        ════════════════════════════════════════════════ -->
     <script>
         /* ── Wishlist toggle ── */
         document.querySelectorAll('.wish-btn').forEach(btn => {
