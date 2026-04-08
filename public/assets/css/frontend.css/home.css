@@ -946,33 +946,6 @@ body {
     transform: scale(1.04);
 }
 
-.studio-dot {
-    position: absolute;
-    top: -14px;
-    right: -14px;
-    width: 56px;
-    height: 56px;
-    background: var(--clr-green2);
-    border-radius: 50%;
-    opacity: .85;
-    z-index: 2;
-}
-
-.studio-badge {
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    z-index: 3;
-    background: rgba(0, 0, 0, .5);
-    backdrop-filter: blur(8px);
-    border-radius: 12px;
-    padding: 12px;
-}
-
-.studio-badge-icon {
-    display: flex;
-}
-
 /* Responsive — Studio Hero */
 @media (max-width: 900px) {
     .studio-hero {
@@ -1014,12 +987,7 @@ body {
         justify-content: center;
     }
 
-    .studio-dot {
-        width: 36px;
-        height: 36px;
-        top: -8px;
-        right: -8px;
-    }
+   
 }
 
 
