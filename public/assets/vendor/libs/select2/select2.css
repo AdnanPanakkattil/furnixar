@@ -138,7 +138,7 @@
 
 .select2-container--default .select2-results__option--highlighted:not([aria-selected=true]) {
   background-color: rgba(115, 103, 240, 0.16) !important;
-  color: #2e7d52 !important;
+  color: #e3e3e3 !important;
 }
 
 .select2-hidden-accessible {
