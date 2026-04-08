@@ -271,10 +271,10 @@ html:not([dir=rtl]) .fc .fc-view-harness .fc-scrollgrid-section-header > * {
 }
 .light-style .fc-event-primary:not(.fc-list-event) {
   background-color: #e7fde8 !important;
-  color: #2e7d52 !important;
+  color: #e3e3e3 !important;
 }
 .light-style .fc-event-primary.fc-list-event .fc-list-event-dot {
-  border-color: #2e7d52 !important;
+  border-color: #e3e3e3 !important;
 }
 .light-style .fc-event-secondary:not(.fc-list-event) {
   background-color: #ebebed !important;
@@ -425,14 +425,14 @@ html:not([dir=rtl]) .fc .fc-view-harness .fc-scrollgrid-section-header > * {
   color: #76778e;
 }
 .dark-style .fc-event-primary:not(.fc-list-event) {
-  background-color: #3a3b64 !important;
-  color: #2e7d52 !important;
+  background-color: #3a643f !important;
+  color: #e3e3e3 !important;
 }
 .dark-style .fc-event-primary:not(.fc-list-event) {
   box-shadow: none;
 }
 .dark-style .fc-event-primary.fc-list-event .fc-list-event-dot {
-  border-color: #2e7d52 !important;
+  border-color: #e3e3e3 !important;
 }
 .dark-style .fc-event-secondary:not(.fc-list-event) {
   background-color: #3c4054 !important;
