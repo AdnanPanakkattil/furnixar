@@ -316,17 +316,17 @@ button.list-group-item-primary.active {
 .table-primary {
   --bs-table-bg: #fbd8e5;
   --bs-table-striped-bg: #efcedc;
-  --bs-table-striped-color: #2f3349;
+  --bs-table-striped-color: #1d1d1d;
   --bs-table-active-bg: #ebcbd9;
-  --bs-table-active-color: #2f3349;
+  --bs-table-active-color: #1d1d1d;
   --bs-table-hover-bg: #efcedc;
-  --bs-table-hover-color: #2f3349;
-  color: #2f3349;
+  --bs-table-hover-color: #1d1d1d;
+  color: #1d1d1d;
   border-color: #e3c4d2;
 }
 .table-primary .btn-icon,
 .table-primary .btn {
-  color: #2f3349;
+  color: #1d1d1d;
 }
 
 .btn-primary {
@@ -909,7 +909,7 @@ a:hover {
 table.dataTable.dtr-column > tbody > tr > td.control:before,
 table.dataTable.dtr-column > tbody > tr > th.control:before {
   background-color: #e30b5c;
-  border: 2px solid #2f3349;
+  border: 2px solid #1d1d1d;
   box-shadow: 0 0 3px rgba(225, 222, 245, 0.8);
 }
 
@@ -1327,7 +1327,7 @@ li.ui-timepicker-selected,
 }
 
 .bg-navbar-theme {
-  background-color: rgba(47, 51, 73, 0.88) !important;
+  background-color: rgba(29, 29, 29) !important;
   color: #cfcde4;
 }
 .bg-navbar-theme .navbar-brand,
@@ -1345,7 +1345,7 @@ li.ui-timepicker-selected,
 }
 .bg-navbar-theme .search-input-wrapper .search-input,
 .bg-navbar-theme .search-input-wrapper .search-toggler {
-  background-color: #2f3349 !important;
+  background-color: #1d1d1d !important;
   color: #cfcde4;
 }
 .bg-navbar-theme .navbar-nav > .nav-link,
@@ -1392,7 +1392,7 @@ li.ui-timepicker-selected,
 }
 
 .layout-navbar {
-  box-shadow: 0 1px 0 #44485e;
+  box-shadow: 0 1px 0 #00ff9a59;
   backdrop-filter: saturate(200%) blur(6px);
 }
 
@@ -1412,11 +1412,11 @@ li.ui-timepicker-selected,
 }
 
 .layout-horizontal .layout-navbar {
-  box-shadow: 0 1px 0 #44485e;
+  box-shadow: 0 1px 0 #00ff9a59;
 }
 
 .bg-menu-theme {
-  background-color: #2f3349 !important;
+  background-color: #1d1d1d !important;
   color: #cfcde4;
 }
 .bg-menu-theme.menu-horizontal {
@@ -1469,7 +1469,7 @@ li.ui-timepicker-selected,
 }
 .bg-menu-theme.menu-horizontal .menu-inner .menu-item:not(.menu-item-closing) > .menu-sub,
 .bg-menu-theme.menu-horizontal .menu-inner .menu-item.open > .menu-toggle {
-  background: #2f3349;
+  background: #1d1d1d;
 }
 .bg-menu-theme.menu-horizontal .menu-item.active > .menu-link:not(.menu-toggle) {
   background: #4c2d4c;
@@ -1481,7 +1481,7 @@ li.ui-timepicker-selected,
   color: #fff;
 }
 .bg-menu-theme .menu-inner-shadow {
-  background: linear-gradient(#2f3349 41%, rgba(47, 51, 73, 0.11) 95%, rgba(47, 51, 73, 0));
+  background: linear-gradient(#1d1d1d 41%, rgba(47, 51, 73, 0.11) 95%, rgba(47, 51, 73, 0));
 }
 .bg-menu-theme .menu-text {
   color: #acabc1;
@@ -1513,11 +1513,11 @@ html:not(.layout-menu-collapsed) .bg-menu-theme .menu-inner .menu-item:not(.acti
 }
 
 .layout-menu {
-  box-shadow: 0 0 0 1px #44485e;
+  box-shadow: 0 0 0 1px #00ff9a59;
 }
 
 .layout-menu-horizontal {
-  box-shadow: 0 -1px 0 #44485e inset;
+  box-shadow: 0 -1px 0 #00ff9a59 inset;
 }
 
 .timeline .timeline-item .timeline-event:after {
@@ -1528,10 +1528,10 @@ html:not(.layout-menu-collapsed) .bg-menu-theme .menu-inner .menu-item:not(.acti
   color: #e30b5c;
 }
 .layout-footer-fixed .layout-horizontal .bg-footer-theme {
-  background-color: #2f3349 !important;
+  background-color: #1d1d1d !important;
 }
 .layout-footer-fixed .layout-wrapper:not(.layout-horizontal) .bg-footer-theme .footer-container {
-  background-color: #2f3349 !important;
+  background-color: #1d1d1d !important;
 }
 .bg-footer-theme .footer-link {
   color: #e30b5c;
@@ -1562,15 +1562,15 @@ html:not(.layout-menu-collapsed) .bg-menu-theme .menu-inner .menu-item:not(.acti
 
 .card {
   box-shadow: none;
-  border: 1px solid #44485e;
+  border: 1px solid #00ff9a59;
 }
 
 .accordion .accordion-item {
-  border-top: var(--bs-border-width) solid #44485e;
+  border-top: var(--bs-border-width) solid #00ff9a59;
 }
 
 .bs-stepper:not(.wizard-modern) {
-  border: 1px solid #44485e;
+  border: 1px solid #00ff9a59;
   border-radius: 0.375rem;
 }
 .modal .modal-body .bs-stepper:not(.wizard-modern) {
@@ -1579,6 +1579,6 @@ html:not(.layout-menu-collapsed) .bg-menu-theme .menu-inner .menu-item:not(.acti
 
 .bs-stepper.wizard-modern .bs-stepper-content {
   box-shadow: none !important;
-  border: 1px solid #44485e;
+  border: 1px solid #00ff9a59;
   border-radius: 0.375rem;
 }
