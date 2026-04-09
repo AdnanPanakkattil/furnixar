@@ -395,7 +395,7 @@ html:not([dir=rtl]) .light-style .bs-stepper.vertical .bs-stepper-header {
   background-color: #1d1d1d;
 }
 .dark-style .bs-stepper .bs-stepper-header {
-  border-bottom: 1px solid #00ff9a59;
+  border-bottom: 1px solid #b9b9b959;
 }
 .dark-style .bs-stepper .bs-stepper-header .line i {
   color: #acabc1;
@@ -425,7 +425,7 @@ html:not([dir=rtl]) .light-style .bs-stepper.vertical .bs-stepper-header {
   .dark-style .bs-stepper.vertical .bs-stepper-header {
     border-right: none !important;
     border-left: none !important;
-    border-bottom: 1px solid #00ff9a59;
+    border-bottom: 1px solid #b9b9b959;
   }
 }
 .dark-style .bs-stepper.wizard-modern {
@@ -446,11 +446,11 @@ html:not([dir=rtl]) .light-style .bs-stepper.vertical .bs-stepper-header {
 }
 
 [dir=rtl] .dark-style .bs-stepper.vertical .bs-stepper-header {
-  border-left: 1px solid #00ff9a59;
+  border-left: 1px solid #b9b9b959;
 }
 
 html:not([dir=rtl]) .dark-style .bs-stepper.vertical .bs-stepper-header {
-  border-right: 1px solid #00ff9a59;
+  border-right: 1px solid #b9b9b959;
 }
 
 [dir=rtl] .bs-stepper .bs-stepper-content .btn-next:not(.btn-submit) i,

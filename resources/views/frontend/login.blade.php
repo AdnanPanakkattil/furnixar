@@ -65,7 +65,7 @@
       text-decoration: none;
     }
 
-    .social-btn:hover { border-color: #2e7d52; background: #f4f2ff; color: #2e7d52; }
+    .social-btn:hover { border-color: #00c55a; background: #f4f2ff; color: #00c55a; }
 
     .social-btn svg { width: 18px; height: 18px; fill: currentColor; }
 
@@ -97,7 +97,7 @@
     }
 
     input::placeholder { color: #b0b0c8; }
-    input:focus { border-color: #2e7d52; background: #fff; }
+    input:focus { border-color: #00c55a; background: #fff; }
 
     .forgot {
       font-size: 13px;
@@ -110,7 +110,7 @@
     .btn-signin {
       width: 100%;
       padding: 13px;
-      background: #2e7d52;
+      background: #00c55a;
       color: #fff;
       border: none;
       border-radius: 10px;
@@ -123,13 +123,13 @@
       transition: background .2s, transform .1s;
     }
 
-    .btn-signin:hover { background: #2e7d52; }
+    .btn-signin:hover { background: #00c55a; }
     .btn-signin:active { transform: scale(.98); }
 
     /* ── RIGHT PANEL ── */
     .right {
       width: clamp(220px, 40%, 360px);
-      background: linear-gradient(135deg, #2e7d52 0%, #2e7d52 55%, #2e7d52 100%);
+      background: linear-gradient(135deg, #00c55a 0%, #00c55a 55%, #00c55a 100%);
       border-radius: 80px 0 0 80px;
       display: flex;
       flex-direction: column;

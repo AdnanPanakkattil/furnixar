@@ -289,11 +289,11 @@
 }
 
 .dark-style .dropzone {
-  border: 2px dashed #00ff9a59;
+  border: 2px dashed #b9b9b959;
 }
 .dark-style .dz-preview {
   background: #1d1d1d;
-  border: 0 solid #00ff9a59;
+  border: 0 solid #b9b9b959;
   border-radius: 0.375rem;
   box-shadow: 0 0.1875rem 0.75rem 0 rgba(19, 17, 32, 0.2);
 }
@@ -312,13 +312,13 @@
   background: #1d1d1d;
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
-  border-bottom: 0 solid #00ff9a59;
+  border-bottom: 0 solid #b9b9b959;
 }
 .dark-style .dz-size {
   color: #76778e;
 }
 .dark-style .dz-thumbnail {
-  border-bottom: 1px solid #00ff9a59;
+  border-bottom: 1px solid #b9b9b959;
   background: rgba(225, 222, 245, 0.025);
   border-top-left-radius: calc(0.375rem - 1px);
   border-top-right-radius: calc(0.375rem - 1px);
@@ -328,7 +328,7 @@
 }
 .dark-style .dz-remove {
   color: #acabc1;
-  border-top: 1px solid #00ff9a59;
+  border-top: 1px solid #b9b9b959;
   border-bottom-right-radius: calc(0.375rem - 1px);
   border-bottom-left-radius: calc(0.375rem - 1px);
 }

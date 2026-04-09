@@ -610,13 +610,13 @@
 }
 
 .dark-style .tagify__dropdown.users-list .tagify__dropdown__item__avatar-wrap {
-  background: #25293c;
+  background: #282828;
 }
 .dark-style .tagify__tag .tagify__tag__avatar-wrap {
-  background: #25293c;
+  background: #282828;
 }
 .dark-style .tagify__dropdown.users-list .addAll {
-  border-bottom: 1px solid #00ff9a59;
+  border-bottom: 1px solid #b9b9b959;
 }
 
 .tags-inline .tagify__dropdown__wrapper {
@@ -650,8 +650,8 @@
 }
 
 .dark-style .tags-inline .tagify__dropdown__item {
-  border: 1px solid #00ff9a59;
-  background: #25293c;
+  border: 1px solid #b9b9b959;
+  background: #282828;
   color: #acabc1;
 }
 .dark-style .tags-inline .tagify__dropdown__item--active {
@@ -733,7 +733,7 @@
 }
 
 .dark-style .tagify-email-list .tagify__tag--editable:not(.tagify--invalid) > div::before {
-  box-shadow: 0 0 0 2px #00ff9a59 inset !important;
+  box-shadow: 0 0 0 2px #b9b9b959 inset !important;
 }
 
 .tagify.form-control {
@@ -879,10 +879,10 @@
 }
 .dark-style .tagify__dropdown {
   box-shadow: 0 0.25rem 1.125rem 0 rgba(19, 17, 32, 0.22);
-  border-top-color: #00ff9a59;
+  border-top-color: #b9b9b959;
 }
 .dark-style .tagify__dropdown__wrapper {
   box-shadow: 0 0.25rem 1.125rem 0 rgba(19, 17, 32, 0.22);
   background: #1d1d1d;
-  border-color: #00ff9a59;
+  border-color: #b9b9b959;
 }

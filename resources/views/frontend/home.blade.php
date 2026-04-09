@@ -471,19 +471,19 @@
                 <div class="tcs-slide is-active" data-idx="0">
                     <div class="tcs-stars" aria-label="5 out of 5 stars">
                         <svg class="tcs-star">
-                            <use href="#star-full" fill="#2e7d52" />
+                            <use href="#star-full" fill="#00c55a" />
                         </svg>
                         <svg class="tcs-star">
-                            <use href="#star-full" fill="#2e7d52" />
+                            <use href="#star-full" fill="#00c55a" />
                         </svg>
                         <svg class="tcs-star">
-                            <use href="#star-full" fill="#2e7d52" />
+                            <use href="#star-full" fill="#00c55a" />
                         </svg>
                         <svg class="tcs-star">
-                            <use href="#star-full" fill="#2e7d52" />
+                            <use href="#star-full" fill="#00c55a" />
                         </svg>
                         <svg class="tcs-star">
-                            <use href="#star-full" fill="#2e7d52" />
+                            <use href="#star-full" fill="#00c55a" />
                         </svg>
                     </div>
                     <p class="tcs-quote">I recently made my first purchase from CozyCorner, and I must say, the
@@ -494,19 +494,19 @@
                 <div class="tcs-slide" data-idx="1">
                     <div class="tcs-stars" aria-label="5 out of 5 stars">
                         <svg class="tcs-star">
-                            <use href="#star-full" fill="#2e7d52" />
+                            <use href="#star-full" fill="#00c55a" />
                         </svg>
                         <svg class="tcs-star">
-                            <use href="#star-full" fill="#2e7d52" />
+                            <use href="#star-full" fill="#00c55a" />
                         </svg>
                         <svg class="tcs-star">
-                            <use href="#star-full" fill="#2e7d52" />
+                            <use href="#star-full" fill="#00c55a" />
                         </svg>
                         <svg class="tcs-star">
-                            <use href="#star-full" fill="#2e7d52" />
+                            <use href="#star-full" fill="#00c55a" />
                         </svg>
                         <svg class="tcs-star">
-                            <use href="#star-full" fill="#2e7d52" />
+                            <use href="#star-full" fill="#00c55a" />
                         </svg>
                     </div>
                     <p class="tcs-quote">CozyCorner's furniture transformed my living space into a cozy retreat. Stylish
@@ -517,19 +517,19 @@
                 <div class="tcs-slide" data-idx="2">
                     <div class="tcs-stars" aria-label="5 out of 5 stars">
                         <svg class="tcs-star">
-                            <use href="#star-full" fill="#2e7d52" />
+                            <use href="#star-full" fill="#00c55a" />
                         </svg>
                         <svg class="tcs-star">
-                            <use href="#star-full" fill="#2e7d52" />
+                            <use href="#star-full" fill="#00c55a" />
                         </svg>
                         <svg class="tcs-star">
-                            <use href="#star-full" fill="#2e7d52" />
+                            <use href="#star-full" fill="#00c55a" />
                         </svg>
                         <svg class="tcs-star">
-                            <use href="#star-full" fill="#2e7d52" />
+                            <use href="#star-full" fill="#00c55a" />
                         </svg>
                         <svg class="tcs-star">
-                            <use href="#star-full" fill="#2e7d52" />
+                            <use href="#star-full" fill="#00c55a" />
                         </svg>
                     </div>
                     <p class="tcs-quote">CozyCorner transformed my space with their exquisite furniture collection.
@@ -540,16 +540,16 @@
                 <div class="tcs-slide" data-idx="3">
                     <div class="tcs-stars" aria-label="4.5 out of 5 stars">
                         <svg class="tcs-star">
-                            <use href="#star-full" fill="#2e7d52" />
+                            <use href="#star-full" fill="#00c55a" />
                         </svg>
                         <svg class="tcs-star">
-                            <use href="#star-full" fill="#2e7d52" />
+                            <use href="#star-full" fill="#00c55a" />
                         </svg>
                         <svg class="tcs-star">
-                            <use href="#star-full" fill="#2e7d52" />
+                            <use href="#star-full" fill="#00c55a" />
                         </svg>
                         <svg class="tcs-star">
-                            <use href="#star-full" fill="#2e7d52" />
+                            <use href="#star-full" fill="#00c55a" />
                         </svg>
                         <svg class="tcs-star">
                             <use href="#star-half" />

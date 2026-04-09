@@ -35,22 +35,22 @@
 
 @media (min-width: 992px) {
   .dark-style .user-card .border-container-lg {
-    border-right: 1px solid #00ff9a59;
+    border-right: 1px solid #b9b9b959;
   }
   .dark-style[dir=rtl] .user-card .border-container-lg {
     border-right: 0;
-    border-left: 1px solid #00ff9a59;
+    border-left: 1px solid #b9b9b959;
   }
 }
 @media (min-width: 576px) {
   .dark-style .user-card .border-container {
-    border-right: 1px solid #00ff9a59;
+    border-right: 1px solid #b9b9b959;
   }
   .dark-style .timeline .break-text {
     width: calc(100% - 90px);
   }
   .dark-style[dir=rtl] .user-card .border-container {
     border-right: 0;
-    border-left: 1px solid #00ff9a59;
+    border-left: 1px solid #b9b9b959;
   }
 }

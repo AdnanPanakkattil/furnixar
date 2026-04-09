@@ -426,7 +426,7 @@ html:not([dir=rtl]) .daterangepicker .drp-calendar.right {
   width: calc(17.35rem + 0 * 2);
   margin-top: 0.125rem;
   background-color: #1d1d1d;
-  border: 0 solid #00ff9a59;
+  border: 0 solid #b9b9b959;
   border-radius: 0.375rem;
   z-index: 1091 !important;
 }

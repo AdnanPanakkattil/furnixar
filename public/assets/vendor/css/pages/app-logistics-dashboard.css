@@ -40,12 +40,12 @@
 }
 
 .dark-style .vehicles-progress-labels .vehicles-progress-label::after {
-  background-color: #00ff9a59;
+  background-color: #b9b9b959;
 }
 .dark-style .vehicles-overview-progress .snackbar {
   background-color: #f7f4ff;
 }
 .dark-style #shipmentStatisticsChart .apexcharts-legend-series,
 .dark-style #carrierPerformance .apexcharts-legend-series {
-  border: 1px solid #00ff9a59;
+  border: 1px solid #b9b9b959;
 }

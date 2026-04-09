@@ -785,7 +785,7 @@ html:not([dir=rtl]) .flatpickr-innerContainer:has(.flatpickr-weeks) .flatpickr-w
   background-color: transparent;
 }
 .dark-style .flatpickr-days {
-  border: 0 solid #00ff9a59;
+  border: 0 solid #b9b9b959;
   border-top: 0;
   padding: 0.25rem 0.5rem;
   padding-bottom: 0.5rem;
@@ -797,12 +797,12 @@ html:not([dir=rtl]) .flatpickr-innerContainer:has(.flatpickr-weeks) .flatpickr-w
 .dark-style:not([dir=rtl]) .flatpickr-calendar.hasWeeks .flatpickr-days {
   border-left: 0;
   padding-left: calc(0.5rem + 0px);
-  box-shadow: 0 0 0 #00ff9a59 inset;
+  box-shadow: 0 0 0 #b9b9b959 inset;
 }
 .dark-style[dir=rtl] .flatpickr-calendar.hasWeeks .flatpickr-days {
   border-right: 0;
   padding-right: calc(0.5rem + 0px);
-  box-shadow: 0 0 0 #00ff9a59 inset;
+  box-shadow: 0 0 0 #b9b9b959 inset;
 }
 .dark-style .flatpickr-calendar {
   line-height: 1.375;
@@ -815,7 +815,7 @@ html:not([dir=rtl]) .flatpickr-innerContainer:has(.flatpickr-weeks) .flatpickr-w
   display: none !important;
 }
 .dark-style .flatpickr-calendar.hasTime .flatpickr-time {
-  box-shadow: 0 1px 0 #00ff9a59 inset;
+  box-shadow: 0 1px 0 #b9b9b959 inset;
 }
 .dark-style .flatpickr-month,
 .dark-style span.flatpickr-weekday,
@@ -872,8 +872,8 @@ html:not([dir=rtl]) .flatpickr-innerContainer:has(.flatpickr-weeks) .flatpickr-w
   box-shadow: 0 0.125rem 0.5rem 0 rgba(19, 17, 32, 0.18);
 }
 .dark-style .flatpickr-weeks {
-  border-bottom: 0 solid #00ff9a59;
-  border-left: 0 solid #00ff9a59;
+  border-bottom: 0 solid #b9b9b959;
+  border-left: 0 solid #b9b9b959;
   background: #1d1d1d;
   border-bottom-right-radius: 0.375rem;
   border-bottom-left-radius: 0.375rem;
@@ -883,11 +883,11 @@ html:not([dir=rtl]) .flatpickr-innerContainer:has(.flatpickr-weeks) .flatpickr-w
   color: #cfcde4;
 }
 .dark-style[dir=rtl] .flatpickr-weeks {
-  border-right: 0 solid #00ff9a59;
+  border-right: 0 solid #b9b9b959;
   border-left: 0;
 }
 .dark-style .flatpickr-time {
-  border: 0 solid #00ff9a59;
+  border: 0 solid #b9b9b959;
   background: #1d1d1d;
   border-radius: 0.375rem;
 }

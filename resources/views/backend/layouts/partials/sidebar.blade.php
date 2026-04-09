@@ -4,8 +4,8 @@
     <a href="index.html" class="app-brand-link">
       <span class="app-brand-logo demo">
         <!-- <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
-          <path d="M16 2L28.1244 9V23L16 30L3.87564 23V9L16 2Z" stroke="#2e7d52" stroke-width="2.5" />
-          <path d="M16 8L22.9282 12V20L16 24L9.0718 20V12L16 8Z" fill="#2e7d52" opacity="0.3" />
+          <path d="M16 2L28.1244 9V23L16 30L3.87564 23V9L16 2Z" stroke="#00c55a" stroke-width="2.5" />
+          <path d="M16 8L22.9282 12V20L16 24L9.0718 20V12L16 8Z" fill="#00c55a" opacity="0.3" />
         </svg> -->
         <img src="{{ asset('assets/imglogo/logo2.png') }}" alt="" height="40px">
       </span>

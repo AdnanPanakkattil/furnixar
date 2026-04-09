@@ -132,13 +132,13 @@
   padding: 0.543rem 1rem;
 }
 .select2-results__option[role=option][aria-selected=true] {
-  background-color: #2e7d52;
+  background-color: #00c55a;
   color: #fff;
 }
 
 .select2-container--default .select2-results__option--highlighted:not([aria-selected=true]) {
   background-color: rgba(115, 103, 240, 0.16) !important;
-  color: #e3e3e3 !important;
+  color: #3a3a3a !important;
 }
 
 .select2-hidden-accessible {
@@ -707,7 +707,7 @@ html:not([dir=rtl]) .select2-container--default .select2-selection--multiple .se
 .dark-style .select2-dropdown {
   z-index: 1000;
   background: #1d1d1d;
-  border-color: #00ff9a59;
+  border-color: #b9b9b959;
   background-clip: padding-box;
   box-shadow: 0 0.25rem 1.125rem 0 rgba(19, 17, 32, 0.22);
 }

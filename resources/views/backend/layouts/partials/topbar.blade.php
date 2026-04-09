@@ -1,4 +1,4 @@
-<nav class="layout-navbar navbar navbar-expand-xl align-items-center bg-navbar-theme" id="layout-navbar" style="border-bottom: 1px solid #f0f0f0;">
+<nav class="layout-navbar navbar navbar-expand-xl align-items-center bg-navbar-theme" id="layout-navbar">
   <div class="container-fluid d-flex align-items-center">
 
     <!-- Hamburger Toggle -->

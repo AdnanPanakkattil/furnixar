@@ -144,7 +144,7 @@ html:not([dir=rtl]) div.dataTables_scrollHeadInner table.table-bordered tr th:fi
 
 .dark-style table.DTFC_Cloned tr {
   background-color: #1d1d1d;
-  border-color: #00ff9a59;
+  border-color: #b9b9b959;
 }
 .dark-style div.dataTables_scrollHead table,
 .dark-style div.DTFC_RightHeadWrapper table,
@@ -154,7 +154,7 @@ html:not([dir=rtl]) div.dataTables_scrollHeadInner table.table-bordered tr th:fi
 }
 .dark-style div.dataTables_scrollFootInner table.table-bordered tr th:first-child,
 .dark-style div.dataTables_scrollHeadInner table.table-bordered tr th:first-child {
-  border-left: 1px solid #00ff9a59 !important;
+  border-left: 1px solid #b9b9b959 !important;
 }
 .dark-style table.dataTable thead tr > .dtfc-fixed-left,
 .dark-style table.dataTable thead tr > .dtfc-fixed-right,
@@ -167,7 +167,7 @@ html:not([dir=rtl]) div.dataTables_scrollHeadInner table.table-bordered tr th:fi
   height: 0px !important;
 }
 .dark-style .dt-fixedcolumns thead {
-  border-top-color: #00ff9a59;
+  border-top-color: #b9b9b959;
 }
 .dark-style[dir=rtl] div.dataTables_scrollHead table,
 .dark-style[dir=rtl] div.dataTables_scrollBody table {
