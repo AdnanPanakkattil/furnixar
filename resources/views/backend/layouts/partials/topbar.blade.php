@@ -1,4 +1,4 @@
-<nav class="layout-navbar navbar navbar-expand-xl align-items-center bg-navbar-theme" id="layout-navbar">
+<nav class="layout-navbar navbar navbar-expand-xl align-items-center bg-navbar-theme" id="layout-navbar" style="border-bottom: 1px solid #f0f0f0;">
   <div class="container-fluid d-flex align-items-center">
 
     <!-- Hamburger Toggle -->
@@ -65,11 +65,7 @@
                 <span class="align-middle"><i class="ti ti-moon-stars ti-md me-3"></i>Dark</span>
               </a>
             </li>
-            <li>
-              <a class="dropdown-item" href="javascript:void(0);" data-theme="system">
-                <span class="align-middle"><i class="ti ti-device-desktop-analytics ti-md me-3"></i>System</span>
-              </a>
-            </li>
+           
           </ul>
         </li>
         <!-- / Style Switcher-->
@@ -167,7 +163,7 @@
         <!-- Quick links -->
 
         <!-- Notification -->
-        <li class="nav-item dropdown-notifications navbar-dropdown dropdown me-3 me-xl-2">
+        <li class="nav-item dropdown-notifications navbar-dropdown dropdown">
           <a
             class="nav-link btn btn-text-secondary btn-icon rounded-pill dropdown-toggle hide-arrow"
             href="javascript:void(0);"
@@ -371,48 +367,57 @@
         </li>
         <!--/ Notification -->
 
-      <!-- User -->
-      <li class="nav-item navbar-dropdown dropdown-user dropdown">
-        <a
-          class="nav-link dropdown-toggle hide-arrow p-0"
-          href="javascript:void(0);"
-          data-bs-toggle="dropdown">
-          <div class="avatar avatar-online">
-            <img src="../../assets/img/avatars/11.png" alt class="rounded-circle" />
-          </div>
-        </a>
-        <ul class="dropdown-menu dropdown-menu-end">
-          <li>
-            <a class="dropdown-item mt-0" href="pages-account-settings-account.html">
-              <div class="d-flex align-items-center">
-                <div class="flex-shrink-0 me-2">
-                  <div class="avatar avatar-online">
-                    <img src="../../assets/img/avatars/11.png" alt class="rounded-circle" />
+        <li class="nav-item">
+          <a class="nav-link btn btn-text-secondary btn-icon rounded-pill"
+            href="javascript:void(0);"
+            id="fullscreen-btn"
+            title="Fullscreen">
+            <i class="ti ti-maximize ti-md" id="fullscreen-icon"></i>
+          </a>
+        </li>
+
+        <!-- User -->
+        <li class="nav-item navbar-dropdown dropdown-user dropdown">
+          <a
+            class="nav-link dropdown-toggle hide-arrow p-0"
+            href="javascript:void(0);"
+            data-bs-toggle="dropdown">
+            <div class="avatar avatar-online">
+              <img src="../../assets/img/avatars/11.png" alt class="rounded-circle" />
+            </div>
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li>
+              <a class="dropdown-item mt-0" href="pages-account-settings-account.html">
+                <div class="d-flex align-items-center">
+                  <div class="flex-shrink-0 me-2">
+                    <div class="avatar avatar-online">
+                      <img src="../../assets/img/avatars/11.png" alt class="rounded-circle" />
+                    </div>
+                  </div>
+                  <div class="flex-grow-1">
+                    <h6 class="mb-0">John Doe</h6>
+                    <small class="text-muted">Admin</small>
                   </div>
                 </div>
-                <div class="flex-grow-1">
-                  <h6 class="mb-0">John Doe</h6>
-                  <small class="text-muted">Admin</small>
-                </div>
-              </div>
-            </a>
-          </li>
-          <li>
-            <div class="dropdown-divider my-1 mx-n2"></div>
-          </li>
-          <li>
-            <a class="dropdown-item" href="pages-profile-user.html">
-              <i class="ti ti-user me-3 ti-md"></i><span class="align-middle">My Profile</span>
-            </a>
-          </li>
-        
-          <li>
-            <div class="d-grid px-2 pt-2 pb-1">
-              <a class="btn btn-sm btn-danger d-flex" href="">
-                <small class="align-middle">Logout</small>
-                <i class="ti ti-logout ms-2 ti-14px"></i>
               </a>
-            </div>
+            </li>
+            <li>
+              <div class="dropdown-divider my-1 mx-n2"></div>
+            </li>
+            <li>
+              <a class="dropdown-item" href="pages-profile-user.html">
+                <i class="ti ti-user me-3 ti-md"></i><span class="align-middle">My Profile</span>
+              </a>
+            </li>
+
+            <li>
+              <div class="d-grid px-2 pt-2 pb-1">
+                <a class="btn btn-sm btn-danger d-flex" href="">
+                  <small class="align-middle">Logout</small>
+                  <i class="ti ti-logout ms-2 ti-14px"></i>
+                </a>
+              </div>
 
             </li>
           </ul>
@@ -433,3 +438,28 @@
     </div>
   </div>
 </nav>
+
+<script>
+  /* Fullscreen toggle */
+  var fsBtn = document.getElementById('fullscreen-btn');
+  var fsIcon = document.getElementById('fullscreen-icon');
+
+  if (fsBtn) {
+    fsBtn.addEventListener('click', function() {
+      if (!document.fullscreenElement) {
+        document.documentElement.requestFullscreen && document.documentElement.requestFullscreen();
+        if (fsIcon) fsIcon.className = 'ti ti-minimize ti-md';
+      } else {
+        document.exitFullscreen && document.exitFullscreen();
+        if (fsIcon) fsIcon.className = 'ti ti-maximize ti-md';
+      }
+    });
+
+    /* Reset icon if user presses Esc to exit fullscreen */
+    document.addEventListener('fullscreenchange', function() {
+      if (!document.fullscreenElement && fsIcon) {
+        fsIcon.className = 'ti ti-maximize ti-md';
+      }
+    });
+  }
+</script>
