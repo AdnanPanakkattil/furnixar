@@ -10,7 +10,7 @@
 // JS global variables
 window.config = {
   colors: {
-    primary: '#00c55a',
+    primary: '#845adf',
     secondary: '#808390',
     success: '#28c76f',
     info: '#00bad1',
@@ -27,7 +27,7 @@ window.config = {
     borderColor: '#e6e6e8'
   },
   colors_label: {
-    primary: '#00c55a29',
+    primary: '#845adf29',
     secondary: '#a8aaae29',
     success: '#28c76f29',
     info: '#00cfe829',
@@ -91,7 +91,7 @@ if (typeof TemplateCustomizer !== 'undefined') {
   window.templateCustomizer = new TemplateCustomizer({
     cssPath: assetsPath + 'vendor/css' + (rtlSupport ? '/rtl' : '') + '/',
     themesPath: assetsPath + 'vendor/css' + (rtlSupport ? '/rtl' : '') + '/',
-    displayCustomizer: true,
+    displayCustomizer: false,
     lang: localStorage.getItem('templateCustomizer-' + templateName + '--Lang') || 'en', // Set default language here
     // defaultTheme: 2,
     // defaultStyle: 'system',

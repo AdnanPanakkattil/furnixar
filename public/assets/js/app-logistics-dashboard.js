@@ -30,7 +30,7 @@
     line: {
       series1: config.colors.warning,
       series2: config.colors.primary,
-      series3: '#00c55a29'
+      series3: '#845adf29'
     }
   };
 
@@ -40,18 +40,24 @@
     shipmentConfig = {
       series: [
         {
-          name: 'Shipment',
-          type: 'column',
-          data: [38, 45, 33, 38, 32, 50, 48, 40, 42, 37]
+          name: 'Sales',
+          type: 'line',
+          data: [150, 300, 400, 600, 500, 700, 800, 650, 700, 600, 500, 400]
         },
         {
-          name: 'Delivery',
+          name: 'Revenue',
           type: 'line',
-          data: [23, 28, 23, 32, 28, 44, 32, 38, 26, 34]
+          data: [200, 350, 450, 700, 600, 800, 900, 750, 800, 700, 600, 450]
+        },
+        {
+          name: 'Profit',
+          type: 'area',
+          data: [100, 150, 200, 300, 250, 350, 400, 350, 350, 300, 250, 150]
         }
       ],
       chart: {
-        height: 320,
+        height: 460,
+        width: '100%',
         type: 'line',
         stacked: false,
         parentHeightOffset: 0,
@@ -67,8 +73,9 @@
       },
       stroke: {
         curve: 'smooth',
-        width: [0, 3],
-        lineCap: 'round'
+        width: [2, 3, 2],
+        lineCap: 'round',
+        dashArray: [5, 0, 0]
       },
       legend: {
         show: true,
@@ -96,9 +103,9 @@
         strokeDashArray: 8,
         borderColor
       },
-      colors: [chartColors.line.series1, chartColors.line.series2],
+      colors: ['#4099FF', '#7367F0', '#00CFE8'],
       fill: {
-        opacity: [1, 1]
+        opacity: [0, 0, 0.08]
       },
       plotOptions: {
         bar: {
@@ -108,10 +115,20 @@
           borderRadius: 4
         }
       },
-      dataLabels: { enabled: false },
+      dataLabels: {
+        enabled: true,
+        formatter: function (val) {
+          return '$' + parseInt(val);
+        },
+        offsetY: -8,
+        style: {
+          fontSize: '11px',
+          fontWeight: 500
+        }
+      },
       xaxis: {
-        tickAmount: 10,
-        categories: ['1 Jan', '2 Jan', '3 Jan', '4 Jan', '5 Jan', '6 Jan', '7 Jan', '8 Jan', '9 Jan', '10 Jan'],
+        tickAmount: 12,
+        categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
         labels: {
           style: {
             colors: labelColor,
@@ -125,7 +142,7 @@
       yaxis: {
         tickAmount: 4,
         min: 0,
-        max: 50,
+        max: 1000,
         labels: {
           style: {
             colors: labelColor,
@@ -134,7 +151,7 @@
             fontWeight: 400
           },
           formatter: function (val) {
-            return val + '%';
+            return '$' + val;
           }
         }
       },
@@ -142,7 +159,7 @@
         {
           breakpoint: 1400,
           options: {
-            chart: { height: 320 },
+            chart: { height: 340 },
             xaxis: { labels: { style: { fontSize: '10px' } } },
             legend: {
               itemMargin: {
@@ -174,7 +191,7 @@
         }
       ]
     };
-  if (typeof shipmentEl !== undefined && shipmentEl !== null) {
+  if (shipmentEl) {
     const shipment = new ApexCharts(shipmentEl, shipmentConfig);
     shipment.render();
   }
@@ -184,25 +201,25 @@
   const deliveryExceptionsChartE1 = document.querySelector('#deliveryExceptionsChart'),
     deliveryExceptionsChartConfig = {
       chart: {
-        height: 420,
+        height: 280,
         parentHeightOffset: 0,
         type: 'donut'
       },
-      labels: ['Incorrect address', 'Weather conditions', 'Federal Holidays', 'Damage during transit'],
-      series: [13, 25, 22, 40],
+      labels: ['Mobile', 'Desktop', 'Laptop', 'Tablet'],
+      series: [1624, 1267, 1153, 679],
       colors: [
-        chartColors.donut.series1,
-        chartColors.donut.series2,
-        chartColors.donut.series3,
-        chartColors.donut.series4
+        '#7367F0',
+        '#00CFE8',
+        '#FF9F43',
+        '#28C76F'
       ],
       stroke: {
         width: 0
       },
       dataLabels: {
-        enabled: false,
+        enabled: true,
         formatter: function (val, opt) {
-          return parseInt(val) + '%';
+          return parseInt(val);
         }
       },
       legend: {
@@ -237,7 +254,7 @@
       plotOptions: {
         pie: {
           donut: {
-            size: '77%',
+            size: '65%',
             labels: {
               show: true,
               value: {
@@ -247,7 +264,7 @@
                 fontWeight: 500,
                 offsetY: -20,
                 formatter: function (val) {
-                  return parseInt(val) + '%';
+                  return parseInt(val);
                 }
               },
               name: {
@@ -259,9 +276,9 @@
                 fontSize: '15px',
                 fontFamily: 'Public Sans',
                 color: legendColor,
-                label: 'AVG. Exceptions',
+                label: 'Total',
                 formatter: function (w) {
-                  return '30%';
+                  return '4,145';
                 }
               }
             }
@@ -273,13 +290,13 @@
           breakpoint: 420,
           options: {
             chart: {
-              height: 360
+              height: 260
             }
           }
         }
       ]
     };
-  if (typeof deliveryExceptionsChartE1 !== undefined && deliveryExceptionsChartE1 !== null) {
+  if (deliveryExceptionsChartE1) {
     const deliveryExceptionsChart = new ApexCharts(deliveryExceptionsChartE1, deliveryExceptionsChartConfig);
     deliveryExceptionsChart.render();
   }

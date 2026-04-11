@@ -54,6 +54,30 @@
     <!-- Page CSS -->
     <link rel="stylesheet" href="{{ asset('assets/vendor/css/pages/cards-advance.css')}}" />
 
+    <style>
+      #topbar-settings-btn {
+        transition: transform 0.8s ease, box-shadow 0.8s ease;
+      }
+
+      #topbar-settings-btn.settings-open-animate {
+        transform: scale(1.05);
+        box-shadow: 0 0 0 10px rgba(0, 197, 90, 0.12);
+      }
+
+      #template-customizer {
+        visibility: hidden !important;
+        opacity: 0;
+        transform: translateX(100%) !important;
+        transition: transform 0.8s ease, opacity 0.8s ease, visibility 0.8s ease;
+      }
+
+      #template-customizer.template-customizer-open {
+        visibility: visible !important;
+        opacity: 1 !important;
+        transform: translateX(0) !important;
+      }
+    </style>
+
     <!-- Helpers -->
     <script src="{{ asset('assets/vendor/js/helpers.js')}}"></script>
     <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
@@ -94,12 +118,10 @@
                 <div class="content-wrapper">
                     <!-- Content -->
 
-                    <div class="container-xxl flex-grow-1 container-p-y">
+                    <div class="container-xxl row container-p-y">
                         @yield('content')
                     </div>
                     <!-- / Content -->
-
-
 
                     <div class="content-backdrop fade"></div>
                 </div>
@@ -143,6 +165,7 @@
     <script src="{{ asset('assets/js/dashboards-analytics.js') }}"></script>
     <script src="{{ asset('assets/vendor/libs/sweetalert2/sweetalert2.js')}}"></script>
     <script src="{{ asset('assets/js/extended-ui-sweetalert2.js')}}"></script>
+    @yield('page-script')
 </body>
 
 </html>

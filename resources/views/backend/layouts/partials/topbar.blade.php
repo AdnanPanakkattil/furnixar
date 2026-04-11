@@ -1,4 +1,4 @@
-<nav class="layout-navbar navbar navbar-expand-xl align-items-center bg-navbar-theme" id="layout-navbar" style="border-bottom: 1px solid #f0f0f0;">
+<nav class="layout-navbar navbar navbar-expand-xl align-items-center bg-navbar-theme" id="layout-navbar" >
   <div class="container-fluid d-flex align-items-center">
 
     <!-- Hamburger Toggle -->
@@ -70,6 +70,20 @@
         </li>
         <!-- / Style Switcher-->
 
+        <!-- Cart -->
+        <li class="nav-item">
+          <a
+            class="nav-link btn btn-text-secondary btn-icon rounded-pill"
+            href="javascript:void(0);"
+            id="cart-btn"
+            title="Cart">
+            <span class="position-relative">
+              <i class="ti ti-shopping-cart ti-md"></i>
+              <span class="badge rounded-pill bg-danger badge-dot badge-notifications border position-absolute top-0 start-100 translate-middle"></span>
+            </span>
+          </a>
+        </li>
+
         <!-- Quick links  -->
         <li class="nav-item dropdown-shortcuts navbar-dropdown dropdown">
           <a
@@ -133,13 +147,6 @@
                   <a href="index.html" class="stretched-link">Dashboard</a>
                   <small>User Dashboard</small>
                 </div>
-                <div class="dropdown-shortcuts-item col">
-                  <span class="dropdown-shortcuts-icon rounded-circle mb-3">
-                    <i class="ti ti-settings ti-26px text-heading"></i>
-                  </span>
-                  <a href="pages-account-settings-account.html" class="stretched-link">Setting</a>
-                  <small>Account Settings</small>
-                </div>
               </div>
               <div class="row row-bordered overflow-visible g-0">
                 <div class="dropdown-shortcuts-item col">
@@ -160,7 +167,17 @@
             </div>
           </div>
         </li>
-        <!-- Quick links -->
+
+        <!-- Settings -->
+        <li class="nav-item">
+          <a
+            id="topbar-settings-btn"
+            class="nav-link btn btn-text-secondary btn-icon rounded-pill"
+            href="javascript:void(0);"
+            title="Settings">
+            <i class="ti ti-settings ti-md"></i>
+          </a>
+        </li>
 
         <!-- Notification -->
         <li class="nav-item dropdown-notifications navbar-dropdown dropdown">
@@ -194,17 +211,17 @@
               <ul class="list-group list-group-flush">
                 <li class="list-group-item list-group-item-action dropdown-notifications-item">
                   <div class="d-flex">
-                    <div class="flex-shrink-0 me-3">
+                    <div class=" me-3">
                       <div class="avatar">
                         <img src="../../assets/img/avatars/11.png" alt class="rounded-circle" />
                       </div>
                     </div>
-                    <div class="flex-grow-1">
+                    <div class="row">
                       <h6 class="small mb-1">Congratulation Lettie 🎉</h6>
                       <small class="mb-1 d-block text-body">Won the monthly best seller gold badge</small>
                       <small class="text-muted">1h ago</small>
                     </div>
-                    <div class="flex-shrink-0 dropdown-notifications-actions">
+                    <div class=" dropdown-notifications-actions">
                       <a href="javascript:void(0)" class="dropdown-notifications-read"><span class="badge badge-dot"></span></a>
                       <a href="javascript:void(0)" class="dropdown-notifications-archive"><span class="ti ti-x"></span></a>
                     </div>
@@ -212,17 +229,17 @@
                 </li>
                 <li class="list-group-item list-group-item-action dropdown-notifications-item">
                   <div class="d-flex">
-                    <div class="flex-shrink-0 me-3">
+                    <div class=" me-3">
                       <div class="avatar">
                         <span class="avatar-initial rounded-circle bg-label-danger">CF</span>
                       </div>
                     </div>
-                    <div class="flex-grow-1">
+                    <div class="row">
                       <h6 class="mb-1 small">Charles Franklin</h6>
                       <small class="mb-1 d-block text-body">Accepted your connection</small>
                       <small class="text-muted">12hr ago</small>
                     </div>
-                    <div class="flex-shrink-0 dropdown-notifications-actions">
+                    <div class=" dropdown-notifications-actions">
                       <a href="javascript:void(0)" class="dropdown-notifications-read"><span class="badge badge-dot"></span></a>
                       <a href="javascript:void(0)" class="dropdown-notifications-archive"><span class="ti ti-x"></span></a>
                     </div>
@@ -230,17 +247,17 @@
                 </li>
                 <li class="list-group-item list-group-item-action dropdown-notifications-item marked-as-read">
                   <div class="d-flex">
-                    <div class="flex-shrink-0 me-3">
+                    <div class=" me-3">
                       <div class="avatar">
                         <img src="../../assets/img/avatars/2.png" alt class="rounded-circle" />
                       </div>
                     </div>
-                    <div class="flex-grow-1">
+                    <div class="row">
                       <h6 class="mb-1 small">New Message ✉️</h6>
                       <small class="mb-1 d-block text-body">You have new message from Natalie</small>
                       <small class="text-muted">1h ago</small>
                     </div>
-                    <div class="flex-shrink-0 dropdown-notifications-actions">
+                    <div class=" dropdown-notifications-actions">
                       <a href="javascript:void(0)" class="dropdown-notifications-read"><span class="badge badge-dot"></span></a>
                       <a href="javascript:void(0)" class="dropdown-notifications-archive"><span class="ti ti-x"></span></a>
                     </div>
@@ -248,17 +265,17 @@
                 </li>
                 <li class="list-group-item list-group-item-action dropdown-notifications-item">
                   <div class="d-flex">
-                    <div class="flex-shrink-0 me-3">
+                    <div class=" me-3">
                       <div class="avatar">
                         <span class="avatar-initial rounded-circle bg-label-success"><i class="ti ti-shopping-cart"></i></span>
                       </div>
                     </div>
-                    <div class="flex-grow-1">
+                    <div class="row">
                       <h6 class="mb-1 small">Whoo! You have new order 🛒</h6>
                       <small class="mb-1 d-block text-body">ACME Inc. made new order $1,154</small>
                       <small class="text-muted">1 day ago</small>
                     </div>
-                    <div class="flex-shrink-0 dropdown-notifications-actions">
+                    <div class=" dropdown-notifications-actions">
                       <a href="javascript:void(0)" class="dropdown-notifications-read"><span class="badge badge-dot"></span></a>
                       <a href="javascript:void(0)" class="dropdown-notifications-archive"><span class="ti ti-x"></span></a>
                     </div>
@@ -266,17 +283,17 @@
                 </li>
                 <li class="list-group-item list-group-item-action dropdown-notifications-item marked-as-read">
                   <div class="d-flex">
-                    <div class="flex-shrink-0 me-3">
+                    <div class=" me-3">
                       <div class="avatar">
                         <img src="../../assets/img/avatars/9.png" alt class="rounded-circle" />
                       </div>
                     </div>
-                    <div class="flex-grow-1">
+                    <div class="row">
                       <h6 class="mb-1 small">Application has been approved 🚀</h6>
                       <small class="mb-1 d-block text-body">Your ABC project application has been approved.</small>
                       <small class="text-muted">2 days ago</small>
                     </div>
-                    <div class="flex-shrink-0 dropdown-notifications-actions">
+                    <div class=" dropdown-notifications-actions">
                       <a href="javascript:void(0)" class="dropdown-notifications-read"><span class="badge badge-dot"></span></a>
                       <a href="javascript:void(0)" class="dropdown-notifications-archive"><span class="ti ti-x"></span></a>
                     </div>
@@ -284,17 +301,17 @@
                 </li>
                 <li class="list-group-item list-group-item-action dropdown-notifications-item marked-as-read">
                   <div class="d-flex">
-                    <div class="flex-shrink-0 me-3">
+                    <div class=" me-3">
                       <div class="avatar">
                         <span class="avatar-initial rounded-circle bg-label-success"><i class="ti ti-chart-pie"></i></span>
                       </div>
                     </div>
-                    <div class="flex-grow-1">
+                    <div class="row">
                       <h6 class="mb-1 small">Monthly report is generated</h6>
                       <small class="mb-1 d-block text-body">July monthly financial report is generated </small>
                       <small class="text-muted">3 days ago</small>
                     </div>
-                    <div class="flex-shrink-0 dropdown-notifications-actions">
+                    <div class=" dropdown-notifications-actions">
                       <a href="javascript:void(0)" class="dropdown-notifications-read"><span class="badge badge-dot"></span></a>
                       <a href="javascript:void(0)" class="dropdown-notifications-archive"><span class="ti ti-x"></span></a>
                     </div>
@@ -302,17 +319,17 @@
                 </li>
                 <li class="list-group-item list-group-item-action dropdown-notifications-item marked-as-read">
                   <div class="d-flex">
-                    <div class="flex-shrink-0 me-3">
+                    <div class=" me-3">
                       <div class="avatar">
                         <img src="../../assets/img/avatars/5.png" alt class="rounded-circle" />
                       </div>
                     </div>
-                    <div class="flex-grow-1">
+                    <div class="row">
                       <h6 class="mb-1 small">Send connection request</h6>
                       <small class="mb-1 d-block text-body">Peter sent you connection request</small>
                       <small class="text-muted">4 days ago</small>
                     </div>
-                    <div class="flex-shrink-0 dropdown-notifications-actions">
+                    <div class=" dropdown-notifications-actions">
                       <a href="javascript:void(0)" class="dropdown-notifications-read"><span class="badge badge-dot"></span></a>
                       <a href="javascript:void(0)" class="dropdown-notifications-archive"><span class="ti ti-x"></span></a>
                     </div>
@@ -320,17 +337,17 @@
                 </li>
                 <li class="list-group-item list-group-item-action dropdown-notifications-item">
                   <div class="d-flex">
-                    <div class="flex-shrink-0 me-3">
+                    <div class=" me-3">
                       <div class="avatar">
                         <img src="../../assets/img/avatars/6.png" alt class="rounded-circle" />
                       </div>
                     </div>
-                    <div class="flex-grow-1">
+                    <div class="row">
                       <h6 class="mb-1 small">New message from Jane</h6>
                       <small class="mb-1 d-block text-body">Your have new message from Jane</small>
                       <small class="text-muted">5 days ago</small>
                     </div>
-                    <div class="flex-shrink-0 dropdown-notifications-actions">
+                    <div class=" dropdown-notifications-actions">
                       <a href="javascript:void(0)" class="dropdown-notifications-read"><span class="badge badge-dot"></span></a>
                       <a href="javascript:void(0)" class="dropdown-notifications-archive"><span class="ti ti-x"></span></a>
                     </div>
@@ -338,17 +355,17 @@
                 </li>
                 <li class="list-group-item list-group-item-action dropdown-notifications-item marked-as-read">
                   <div class="d-flex">
-                    <div class="flex-shrink-0 me-3">
+                    <div class=" me-3">
                       <div class="avatar">
                         <span class="avatar-initial rounded-circle bg-label-warning"><i class="ti ti-alert-triangle"></i></span>
                       </div>
                     </div>
-                    <div class="flex-grow-1">
+                    <div class="row">
                       <h6 class="mb-1 small">CPU is running high</h6>
                       <small class="mb-1 d-block text-body">CPU Utilization Percent is currently at 88.63%,</small>
                       <small class="text-muted">5 days ago</small>
                     </div>
-                    <div class="flex-shrink-0 dropdown-notifications-actions">
+                    <div class=" dropdown-notifications-actions">
                       <a href="javascript:void(0)" class="dropdown-notifications-read"><span class="badge badge-dot"></span></a>
                       <a href="javascript:void(0)" class="dropdown-notifications-archive"><span class="ti ti-x"></span></a>
                     </div>
@@ -390,12 +407,12 @@
             <li>
               <a class="dropdown-item mt-0" href="pages-account-settings-account.html">
                 <div class="d-flex align-items-center">
-                  <div class="flex-shrink-0 me-2">
+                  <div class=" me-2">
                     <div class="avatar avatar-online">
                       <img src="../../assets/img/avatars/11.png" alt class="rounded-circle" />
                     </div>
                   </div>
-                  <div class="flex-grow-1">
+                  <div class="row">
                     <h6 class="mb-0">John Doe</h6>
                     <small class="text-muted">Admin</small>
                   </div>

@@ -870,22 +870,22 @@ button.list-group-item-primary.active {
 .jstree-default .jstree-wholerow-hovered,
 .jstree-default .jstree-hovered {
   background: rgba(115, 103, 240, 0.16);
-  color: #00c55a;
+  color: #845adf;
 }
 .jstree-default .jstree-wholerow-clicked,
 .jstree-default .jstree-clicked {
-  background: #00c55a;
+  background: #845adf;
   color: #fff;
 }
 
 .jstree-default-dark .jstree-wholerow-hovered,
 .jstree-default-dark .jstree-hovered {
   background: rgba(115, 103, 240, 0.16);
-  color: #00c55a;
+  color: #845adf;
 }
 .jstree-default-dark .jstree-wholerow-clicked,
 .jstree-default-dark .jstree-clicked {
-  background: #00c55a;
+  background: #845adf;
   color: #fff;
 }
 

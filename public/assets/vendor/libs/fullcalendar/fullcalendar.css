@@ -270,7 +270,7 @@ html:not([dir=rtl]) .fc .fc-view-harness .fc-scrollgrid-section-header > * {
   color: #acaab1;
 }
 .light-style .fc-event-primary:not(.fc-list-event) {
-  background-color: #9ff9a3 !important;
+  background-color: #845adfd4 !important;
   color: #3a3a3a !important;
 }
 .light-style .fc-event-primary.fc-list-event .fc-list-event-dot {

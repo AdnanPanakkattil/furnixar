@@ -181,6 +181,61 @@ if (document.getElementById('layout-menu')) {
   // Run switchImage function based on the stored style
   switchImage(storedStyle);
 
+  // Hide the built-in customizer open button and open the panel only from the topbar.
+  if (window.templateCustomizer) {
+    document.body.classList.add('customizer-hide');
+
+    const templateCustomizerOpenBtn = document.querySelector('.template-customizer-open-btn');
+    if (templateCustomizerOpenBtn) {
+      templateCustomizerOpenBtn.style.display = 'none';
+    }
+
+    const topbarSettingsBtn = document.getElementById('topbar-settings-btn');
+    if (topbarSettingsBtn) {
+      topbarSettingsBtn.addEventListener('click', function (event) {
+        event.preventDefault();
+
+        this.classList.add('settings-open-animate');
+        setTimeout(() => this.classList.remove('settings-open-animate'), 900);
+
+        if (window.templateCustomizer && window.templateCustomizer.container) {
+          window.templateCustomizer.container.style.visibility = 'visible';
+          window.templateCustomizer.container.classList.add('template-customizer-open');
+          window.templateCustomizer.update();
+        }
+      });
+    }
+
+    const themeToggleBtn = document.getElementById('theme-toggle-btn');
+    const updateThemeToggleIcon = function (theme) {
+      if (!themeToggleBtn) return;
+      const icon = themeToggleBtn.querySelector('i');
+      if (!icon) return;
+      icon.className = 'ti ti-md ' + (theme === 'dark' ? 'ti-moon' : 'ti-sun');
+      themeToggleBtn.title = theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode';
+    };
+
+    const currentStyle = localStorage.getItem('templateCustomizer-' + templateName + '--Style') || storedStyle;
+    updateThemeToggleIcon(currentStyle);
+
+    if (themeToggleBtn) {
+      themeToggleBtn.addEventListener('click', function (event) {
+        event.preventDefault();
+        const nextStyle = document.documentElement.classList.contains('dark-style') ? 'light' : 'dark';
+
+        if (window.templateCustomizer) {
+          window.templateCustomizer.setStyle(nextStyle);
+        } else {
+          document.documentElement.classList.toggle('dark-style', nextStyle === 'dark');
+          document.documentElement.classList.toggle('light-style', nextStyle === 'light');
+          localStorage.setItem('templateCustomizer-' + templateName + '--Style', nextStyle);
+        }
+
+        updateThemeToggleIcon(nextStyle);
+      });
+    }
+  }
+
   // Internationalization (Language Dropdown)
   // ---------------------------------------
 
