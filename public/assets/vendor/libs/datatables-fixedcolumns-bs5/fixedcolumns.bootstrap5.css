@@ -143,14 +143,14 @@ html:not([dir=rtl]) div.dataTables_scrollHeadInner table.table-bordered tr th:fi
 }
 
 .dark-style table.DTFC_Cloned tr {
-  background-color: #1d1d1d;
+  background-color: #1a1c1e;
   border-color: #b9b9b959;
 }
 .dark-style div.dataTables_scrollHead table,
 .dark-style div.DTFC_RightHeadWrapper table,
 .dark-style table.dataTable.fixedHeader-floating,
 .dark-style table.dataTable.fixedHeader-locked {
-  background-color: #1d1d1d;
+  background-color: #1a1c1e;
 }
 .dark-style div.dataTables_scrollFootInner table.table-bordered tr th:first-child,
 .dark-style div.dataTables_scrollHeadInner table.table-bordered tr th:first-child {
@@ -162,7 +162,7 @@ html:not([dir=rtl]) div.dataTables_scrollHeadInner table.table-bordered tr th:fi
 .dark-style table.dataTable tbody tr > .dtfc-fixed-right,
 .dark-style div.dtfc-right-top-blocker,
 .dark-style div.dtfc-left-top-blocker {
-  background-color: #1d1d1d;
+  background-color: #1a1c1e;
   margin-top: 1px !important;
   height: 0px !important;
 }

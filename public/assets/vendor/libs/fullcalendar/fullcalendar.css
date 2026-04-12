@@ -372,7 +372,7 @@ html:not([dir=rtl]) .fc .fc-view-harness .fc-scrollgrid-section-header > * {
   background-color: #3a3d53 !important;
 }
 .dark-style .fc .fc-day-today:not(.fc-col-header-cell) .fc-popover-body {
-  background-color: #1d1d1d !important;
+  background-color: #1a1c1e !important;
 }
 .dark-style .fc .fc-divider {
   background: #b9b9b959;

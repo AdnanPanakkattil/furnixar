@@ -975,14 +975,14 @@
 }
 .dark-style .ql-snow .ql-editor {
   padding: 0.5rem 0.9375rem;
-  background: #1d1d1d;
+  background: #1a1c1e;
 }
 .dark-style .ql-snow .ql-picker-options {
-  background: #1d1d1d;
+  background: #1a1c1e;
 }
 .dark-style .ql-snow.ql-toolbar, .dark-style .ql-snow .ql-toolbar {
   border: 0.0625rem solid #56596f;
-  background: #1d1d1d;
+  background: #1a1c1e;
 }
 @media (pointer: coarse) {
   .dark-style .ql-snow.ql-toolbar button:hover:not(.ql-active), .dark-style .ql-snow .ql-toolbar button:hover:not(.ql-active) {

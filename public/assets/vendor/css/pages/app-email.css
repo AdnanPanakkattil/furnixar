@@ -372,7 +372,7 @@
 }
 
 .dark-style .app-email .app-email-sidebar {
-  background-color: #1d1d1d;
+  background-color: #1a1c1e;
 }
 .dark-style .app-email .app-email-sidebar ul li:not(.active) a {
   color: #cfcde4;
@@ -414,7 +414,7 @@
   border: 1px solid #b9b9b959;
 }
 .dark-style .app-email .app-email-view .app-email-view-header {
-  background-color: #1d1d1d;
+  background-color: #1a1c1e;
 }
 .dark-style .app-email .app-email-compose .modal-dialog .modal-header {
   background-color: rgba(225, 222, 245, 0.06);

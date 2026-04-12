@@ -28,6 +28,9 @@ Route::get('branches', function () {
     return view('frontend.branches');
 });
 
-Route::get('dashborad', function () {
-    return view('backend.dashborad');
-});
+Route::get('dashboard', function () {
+    return view('backend.dashboard');
+})->name('dashboard');
+Route::get('user', function () {
+    return view('backend.user');
+})->name('user');

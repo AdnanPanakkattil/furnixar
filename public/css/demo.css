@@ -4,11 +4,17 @@
 ******************************************************************************/
 
 .light-style .menu .app-brand.demo {
-  height: 64px;
+  height: 55px;
 }
 
 .dark-style .menu .app-brand.demo {
-  height: 64px;
+  height: 55px;
+}
+.brand-divider {
+    width: 100%;
+    height: 2px;
+    background-color: #545454; /* dark theme match */
+    opacity: 0.4;
 }
 
 .app-brand-logo.demo {

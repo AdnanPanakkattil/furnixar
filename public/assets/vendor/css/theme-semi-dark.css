@@ -1412,7 +1412,7 @@ li.ui-timepicker-selected,
 }
 
 .bg-menu-theme {
-  background-color: #1d1d1d !important;
+  background-color: #1a1c1e !important;
   color: #cfcce4;
 }
 .bg-menu-theme.menu-horizontal {
@@ -1465,7 +1465,7 @@ li.ui-timepicker-selected,
 }
 .bg-menu-theme.menu-horizontal .menu-inner .menu-item:not(.menu-item-closing) > .menu-sub,
 .bg-menu-theme.menu-horizontal .menu-inner .menu-item.open > .menu-toggle {
-  background: #1d1d1d;
+  background: #1a1c1e;
 }
 .bg-menu-theme.menu-horizontal .menu-item.active > .menu-link:not(.menu-toggle) {
   background: #3a3b64;
@@ -1477,7 +1477,7 @@ li.ui-timepicker-selected,
   color: #fff;
 }
 .bg-menu-theme .menu-inner-shadow {
-  background: linear-gradient(#1d1d1d 41%, rgba(47, 51, 73, 0.11) 95%, rgba(47, 51, 73, 0));
+  background: linear-gradient(#1a1c1e 41%, rgba(47, 51, 73, 0.11) 95%, rgba(47, 51, 73, 0));
 }
 .bg-menu-theme .menu-text {
   color: #fff;

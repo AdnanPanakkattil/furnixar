@@ -9,83 +9,107 @@
         </svg> -->
         <img src="{{ asset('assets/imglogo/logo2.png') }}" alt="" height="40px">
       </span>
-      <span class="app-brand-text demo menu-text fw-bold ms-2 text-dark" style="font-size: 24px;">Furnixar</span>
+      <span class="app-brand-text demo menu-text   text-dark" style="font-size: 24px;">Furnixar</span>
     </a>
-
   </div>
 
-  <div class="menu-inner-shadow"></div>
+    <div class="brand-divider"></div>
+
 
   <ul class="menu-inner py-1">
     <!-- Section: Main -->
-    <li class="menu-header small text-uppercase"><span class="menu-header-text">dashboards</span></li>
+    <li class="menu-header small text-uppercase"><span class="menu-header-text">dashboard</span></li>
     <li class="menu-item">
-      <a href="javascript:void(0);" class="menu-link">
+      <a href="{{ route('dashboard') }}" class="menu-link">
         <i class="menu-icon ti ti-smart-home"></i>
         <div data-i18n="Dashboards">Dashboards</div>
 
       </a>
     </li>
 
-    <!-- Section: Web Apps -->
-    <li class="menu-header small text-uppercase"><span class="menu-header-text">Web Apps</span></li>
-    <li class="menu-item">
-      <a href="javascript:void(0);" class="menu-link">
-        <i class="menu-icon ti ti-layout-grid"></i>
-        <div data-i18n="Apps">Apps</div>
-      </a>
-    </li>
-    <li class="menu-item">
-      <a href="javascript:void(0);" class="menu-link">
-        <i class="menu-icon ti ti-files"></i>
-        <div data-i18n="Nested Menu">Nested Menu</div>
-      </a>
-    </li>
-
-    <li class="menu-item" id="service_main_menu">
-      <a href="javascript:void(0);" class="menu-link menu-toggle">
-        <i class="menu-icon tf-icons ti ti-server-cog"></i>
-        <div data-i18n="Services"> Services </div>
-      </a>
-      <ul class="menu-sub">
-        <li class="menu-item" id="insurance_sub_menu">
-          <a href="" class="menu-link">
-            <div data-i18n="Insurance Services"> Insurance Service</div>
-          </a>
-        </li>
-        <li class="menu-item" id="xray_sub_menu">
-          <a href="" class="menu-link">
-            <div data-i18n="X-Ray Service"> X-Ray Service</div>
-          </a>
-        </li>
-
-
-      </ul>
-    </li>
-
+    <!-- page section  -->
+    <li class="menu-header small text-uppercase"><span class="menu-header-text">pages</span></li>
     <li class="menu-item" id="laboratory_main_sub_menu">
       <a href="javascript:void(0);" class="menu-link menu-toggle">
-        <div data-i18n="Laboratory"> Laboratory </div>
+        <i class="menu-icon ti ti-layout-grid"></i>
+        <div data-i18n="Category"> Category </div>
       </a>
       <ul class="menu-sub">
 
         <li class="menu-item" id="laboratory_sub_menu">
           <a href="" class="menu-link">
-            <div data-i18n="Laboratory">Laboratory</div>
+            <div data-i18n="Sofas">Sofas</div>
           </a>
         </li>
 
         <li class="menu-item" id="laboratory-package_sub_menu">
           <a href="" class="menu-link">
-            <div data-i18n="Package">Package</div>
+            <div data-i18n="Wardrobes">Wardrobes</div>
+          </a>
+        </li>
+        <li class="menu-item" id="laboratory-package_sub_menu">
+          <a href="" class="menu-link">
+            <div data-i18n="Chairs">Chairs</div>
+          </a>
+        </li>
+        <li class="menu-item" id="laboratory-package_sub_menu">
+          <a href="" class="menu-link">
+            <div data-i18n="Desks">Desks</div>
+          </a>
+        </li>
+        <li class="menu-item" id="laboratory-package_sub_menu">
+          <a href="" class="menu-link">
+            <div data-i18n="Tables">Tables</div>
+          </a>
+        </li>
+        <li class="menu-item" id="laboratory-package_sub_menu">
+          <a href="" class="menu-link">
+            <div data-i18n="Lighting">Lighting</div>
+          </a>
+        </li>
+        <li class="menu-item" id="laboratory-package_sub_menu">
+          <a href="" class="menu-link">
+            <div data-i18n="Cabinets">Cabinets</div>
+          </a>
+        </li>
+        <li class="menu-item" id="laboratory-package_sub_menu">
+          <a href="" class="menu-link">
+            <div data-i18n="Office">Office</div>
+          </a>
+        </li>
+        <li class="menu-item" id="laboratory-package_sub_menu">
+          <a href="" class="menu-link">
+            <div data-i18n="Accessories">Accessories</div>
           </a>
         </li>
 
       </ul>
     </li>
+    <li class="menu-item">
+      <a href="javascript:void(0);" class="menu-link">
+        <i class="menu-icon ti ti-tag"></i>
+        <div data-i18n="Offers">Offers</div>
+      </a>
+    </li>
 
+
+
+    <li class="menu-item" id="laboratory_main_sub_menu">
+      <a href="javascript:void(0);" class="menu-link menu-toggle">
+        <i class="menu-icon ti ti-user-cog"></i>
+        <div data-i18n="Administration"> Administration </div>
+      </a>
+      <ul class="menu-sub">
+
+        <li class="menu-item" id="laboratory_sub_menu">
+          <a href="{{ url('user') }}" class="menu-link">
+            <div data-i18n="User">User</div>
+          </a>
+        </li>
+
+      </ul>
+    </li>
   </ul>
 
 
 </aside>
-

@@ -358,7 +358,7 @@ button.list-group-item-primary.active {
 }
 
 .btn-primary {
-  color: #111c43;
+  color: #ffffff;
   background-color: #e30b5c;
   border-color: #e30b5c;
 }
@@ -366,7 +366,7 @@ button.list-group-item-primary.active {
   box-shadow: 0 0.125rem 0.375rem 0 rgba(227, 11, 92, 0.3);
 }
 .btn-primary:hover {
-  color: #111c43 !important;
+  color: #434343 !important;
   background-color: #cc0a53 !important;
   border-color: #cc0a53 !important;
 }
@@ -1394,7 +1394,7 @@ li.ui-timepicker-selected,
 }
 .bg-navbar-theme .search-input-wrapper .search-input,
 .bg-navbar-theme .search-input-wrapper .search-toggler {
-  background-color: #111c43 !important;
+  background-color: #ffffff !important;
   color: #444050;
 }
 .bg-navbar-theme .navbar-nav > .nav-link,
@@ -1474,7 +1474,7 @@ li.ui-timepicker-selected,
 .bg-menu-theme .menu-link,
 .bg-menu-theme .menu-horizontal-prev,
 .bg-menu-theme .menu-horizontal-next {
-  color: #444050;
+  color: #a3aed1;
 }
 .bg-menu-theme .menu-link:hover, .bg-menu-theme .menu-link:focus,
 .bg-menu-theme .menu-horizontal-prev:hover,
@@ -1489,7 +1489,7 @@ li.ui-timepicker-selected,
   color: #444050;
 }
 .bg-menu-theme .menu-toggle::after {
-  color: #444050;
+  color: #ffffff;
 }
 .bg-menu-theme .menu-item.disabled .menu-link,
 .bg-menu-theme .menu-horizontal-prev.disabled,

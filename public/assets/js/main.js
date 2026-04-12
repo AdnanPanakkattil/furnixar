@@ -721,4 +721,25 @@ if (typeof $ !== 'undefined') {
       });
     }
   });
+  
+  // fit screen -fullscreen
+
+  var fsBtn = document.getElementById('fullscreen-btn');
+  var fsIcon = document.getElementById('fullscreen-icon');
+  if (fsBtn) {
+    fsBtn.addEventListener('click', function () {
+      if (!document.fullscreenElement) {
+        document.documentElement.requestFullscreen && document.documentElement.requestFullscreen();
+        if (fsIcon) fsIcon.className = 'ti ti-minimize ti-md';
+      } else {
+        document.exitFullscreen && document.exitFullscreen();
+        if (fsIcon) fsIcon.className = 'ti ti-maximize ti-md';
+      }
+    });
+    document.addEventListener('fullscreenchange', function () {
+      if (!document.fullscreenElement && fsIcon) {
+        fsIcon.className = 'ti ti-maximize ti-md';
+      }
+    });
+  }
 }

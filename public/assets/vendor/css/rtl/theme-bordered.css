@@ -188,7 +188,7 @@ a.bg-primary:hover, a.bg-primary:focus {
 
 .bg-label-primary {
   background-color: #845adfd4 !important;
-  color: #3a3a3a !important;
+  color: #ffffff !important;
 }
 
 .bg-label-hover-primary {
@@ -440,15 +440,15 @@ button.list-group-item-primary.active {
 }
 
 .btn-primary {
-  color: #111c43;
+  color: #ffffff;
   background-color: #845adf;
   border-color: #845adf;
 }
 .btn-primary.btn[class*=btn-]:not([class*=btn-label-]):not([class*=btn-outline-]):not([class*=btn-text-]):not(.btn-icon):not(:disabled):not(.disabled) {
-  box-shadow: 0 0.125rem 0.375rem 0 rgb(33, 255, 8 ,  0.4);;
+  box-shadow: 0 0.125rem 0.375rem 0 #845adfc9;;
 }
 .btn-primary:hover {
-  color: #111c43 !important;
+  color: #ffffff !important;
   background-color: #685dd8 !important;
   border-color: #685dd8 !important;
 }
@@ -600,7 +600,7 @@ button.list-group-item-primary.active {
 }
 .dropdown-item:not(.disabled).active, .dropdown-item:not(.disabled):active {
   background-color: #845adfd4;
-  color: #3a3a3a !important;
+  color: #ffffff !important;
 }
 
 .dropdown-menu > li:not(.disabled) > a:not(.dropdown-item):active,
@@ -1326,12 +1326,12 @@ li.ui-timepicker-selected,
 }
 
 .shepherd-element .shepherd-button:not(:disabled).btn-primary {
-  color: #111c43;
+  color: #f6f6f6;
   background-color: #845adf;
   border-color: #845adf;
 }
 .shepherd-element .shepherd-button:not(:disabled).btn-primary.btn[class*=btn-]:not([class*=btn-label-]):not([class*=btn-outline-]):not([class*=btn-text-]):not(.btn-icon):not(:disabled):not(.disabled) {
-  box-shadow: 0 0.125rem 0.375rem 0 rgb(33, 255, 8 ,  0.4);;
+  box-shadow: 0 0.125rem 0.375rem 0 #845adfc9;;
 }
 .shepherd-element .shepherd-button:not(:disabled).btn-primary:hover {
   color: #111c43 !important;
@@ -1476,7 +1476,7 @@ li.ui-timepicker-selected,
 }
 .bg-navbar-theme .search-input-wrapper .search-input,
 .bg-navbar-theme .search-input-wrapper .search-toggler {
-  background-color: #111c43 !important;
+  background-color: #ffffff !important;
   color: #444050;
 }
 .bg-navbar-theme .navbar-nav > .nav-link,
@@ -1557,7 +1557,7 @@ li.ui-timepicker-selected,
 .bg-menu-theme .menu-link,
 .bg-menu-theme .menu-horizontal-prev,
 .bg-menu-theme .menu-horizontal-next {
-  color: #444050;
+  color: #a3aed1;
 }
 .bg-menu-theme .menu-link:hover, .bg-menu-theme .menu-link:focus,
 .bg-menu-theme .menu-horizontal-prev:hover,
@@ -1572,7 +1572,7 @@ li.ui-timepicker-selected,
   color: #444050;
 }
 .bg-menu-theme .menu-toggle::after {
-  color: #444050;
+  color: #ffffff;
 }
 .bg-menu-theme .menu-item.disabled .menu-link,
 .bg-menu-theme .menu-horizontal-prev.disabled,

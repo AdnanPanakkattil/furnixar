@@ -1,4 +1,4 @@
-<nav class="layout-navbar navbar navbar-expand-xl align-items-center bg-navbar-theme" id="layout-navbar" >
+<nav class="layout-navbar navbar navbar-expand-xl align-items-center bg-navbar-theme" id="layout-navbar">
   <div class="container-fluid d-flex align-items-center">
 
     <!-- Hamburger Toggle -->
@@ -167,18 +167,6 @@
             </div>
           </div>
         </li>
-
-        <!-- Settings -->
-        <li class="nav-item">
-          <a
-            id="topbar-settings-btn"
-            class="nav-link btn btn-text-secondary btn-icon rounded-pill"
-            href="javascript:void(0);"
-            title="Settings">
-            <i class="ti ti-settings ti-md"></i>
-          </a>
-        </li>
-
         <!-- Notification -->
         <li class="nav-item dropdown-notifications navbar-dropdown dropdown">
           <a
@@ -395,88 +383,55 @@
 
         <!-- User -->
         <li class="nav-item navbar-dropdown dropdown-user dropdown">
-          <a
-            class="nav-link dropdown-toggle hide-arrow p-0"
-            href="javascript:void(0);"
-            data-bs-toggle="dropdown">
-            <div class="avatar avatar-online">
-              <img src="../../assets/img/avatars/11.png" alt class="rounded-circle" />
+          <a class="nav-link dropdown-toggle hide-arrow p-0" href="javascript:void(0);" data-bs-toggle="dropdown">
+            <div class="d-flex align-items-center">
+              <div class="me-2">
+                <div class="avatar avatar-online">
+                  <img src="../../assets/img/avatars/11.png" alt class="rounded-circle" />
+                </div>
+              </div>
+              <div>
+                <h6 class="mb-0">Muhammed Adnan.P</h6>
+                <small class="text-muted">Super Admin</small>
+              </div>
             </div>
           </a>
           <ul class="dropdown-menu dropdown-menu-end">
             <li>
-              <a class="dropdown-item mt-0" href="pages-account-settings-account.html">
-                <div class="d-flex align-items-center">
-                  <div class=" me-2">
-                    <div class="avatar avatar-online">
-                      <img src="../../assets/img/avatars/11.png" alt class="rounded-circle" />
-                    </div>
-                  </div>
-                  <div class="row">
-                    <h6 class="mb-0">John Doe</h6>
-                    <small class="text-muted">Admin</small>
-                  </div>
-                </div>
-              </a>
-            </li>
-            <li>
-              <div class="dropdown-divider my-1 mx-n2"></div>
-            </li>
-            <li>
               <a class="dropdown-item" href="pages-profile-user.html">
-                <i class="ti ti-user me-3 ti-md"></i><span class="align-middle">My Profile</span>
+                <i class="ti ti-user me-3 ti-md"></i>
+                <span class="align-middle">Profile</span>
               </a>
             </li>
-
             <li>
-              <div class="d-grid px-2 pt-2 pb-1">
-                <a class="btn btn-sm btn-danger d-flex" href="">
-                  <small class="align-middle">Logout</small>
-                  <i class="ti ti-logout ms-2 ti-14px"></i>
-                </a>
-              </div>
-
+              <div class="dropdown-divider my-1"></div>
+            </li>
+            <li>
+              <a class="dropdown-item text-danger" href="">
+                <i class="ti ti-logout me-3 ti-md"></i>
+                <span class="align-middle">Log Out</span>
+              </a>
             </li>
           </ul>
         </li>
         <!--/ User -->
+
+        <!-- Settings -->  
+        <li class="nav-item">
+          <a id="topbar-settings-btn" class="nav-link btn btn-text-secondary btn-icon rounded-pill"
+            href="javascript:void(0);" title="Settings">
+            <i class="ti ti-settings ti-md"></i>
+          </a>
+        </li>
       </ul>
 
     </div>
 
     <!-- Search Small Screens -->
     <div class="navbar-search-wrapper search-input-wrapper d-none">
-      <input
-        type="text"
-        class="form-control search-input container-xxl border-0"
-        placeholder="Search..."
+      <input type="text" class="form-control search-input container-xxl border-0" placeholder="Search..."
         aria-label="Search..." />
       <i class="ti ti-x search-toggler cursor-pointer"></i>
     </div>
   </div>
 </nav>
-
-<script>
-  /* Fullscreen toggle */
-  var fsBtn = document.getElementById('fullscreen-btn');
-  var fsIcon = document.getElementById('fullscreen-icon');
-
-  if (fsBtn) {
-    fsBtn.addEventListener('click', function() {
-      if (!document.fullscreenElement) {
-        document.documentElement.requestFullscreen && document.documentElement.requestFullscreen();
-        if (fsIcon) fsIcon.className = 'ti ti-minimize ti-md';
-      } else {
-        document.exitFullscreen && document.exitFullscreen();
-        if (fsIcon) fsIcon.className = 'ti ti-maximize ti-md';
-      }
-    });
-
-    /* Reset icon if user presses Esc to exit fullscreen */
-    document.addEventListener('fullscreenchange', function() {
-      if (!document.fullscreenElement && fsIcon) {
-        fsIcon.className = 'ti ti-maximize ti-md';
-      }
-    });
-  }
-</script>

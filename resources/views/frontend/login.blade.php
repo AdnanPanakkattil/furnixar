@@ -262,7 +262,7 @@
     <div class="right">
       <h2>Hello, Friend!</h2>
       <p>Register with your personal details to use all of site features</p>
-      <a href="{{ url('dashborad') }}">
+      <a href="{{ route('dashboard') }}" class="menu-link"> 
         <button class="btn-signup">Sign Up</button>
     </a>
       

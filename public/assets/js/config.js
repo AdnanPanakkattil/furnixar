@@ -36,7 +36,7 @@ window.config = {
     dark: '#4b4b4b29'
   },
   colors_dark: {
-    cardColor: '#1d1d1d',
+    cardColor: '#1a1c1e',
     bodyBg: '#25293c',
     bodyColor: '#b2b1cb',
     headingColor: '#cfcce4',

@@ -292,7 +292,7 @@
   border: 2px dashed #b9b9b959;
 }
 .dark-style .dz-preview {
-  background: #1d1d1d;
+  background: #1a1c1e;
   border: 0 solid #b9b9b959;
   border-radius: 0.375rem;
   box-shadow: 0 0.1875rem 0.75rem 0 rgba(19, 17, 32, 0.2);
@@ -309,7 +309,7 @@
   font-weight: 400;
 }
 .dark-style .dz-filename {
-  background: #1d1d1d;
+  background: #1a1c1e;
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
   border-bottom: 0 solid #b9b9b959;

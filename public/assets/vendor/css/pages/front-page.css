@@ -47,7 +47,7 @@
 }
 
 .dark-style body {
-  background-color: #1d1d1d;
+  background-color: #1a1c1e;
 }
 
 nav.layout-navbar {
@@ -203,15 +203,15 @@ nav.layout-navbar.navbar-active::after {
 }
 @media (max-width: 991.98px) {
   .dark-style .layout-navbar .navbar.landing-navbar .landing-nav-menu {
-    background-color: #1d1d1d;
+    background-color: #1a1c1e;
   }
 }
 .dark-style .layout-navbar .navbar .menu-text {
   color: #cfcde4;
 }
 .dark-style .layout-navbar.navbar-active .navbar.landing-navbar {
-  background: #1d1d1d;
-  border-color: #1d1d1d;
+  background: #1a1c1e;
+  border-color: #1a1c1e;
   box-shadow: 0 0.125rem 0.5rem 0 rgba(19, 17, 32, 0.18);
 }
 
