@@ -1,18 +1,47 @@
 <?php
 
-namespace Modules\Backend\Http\Controllers;
+namespace Modules\Auth\Http\Controllers;
 
 use App\Http\Controllers\Controller;
+use Auth;
 use Illuminate\Http\Request;
 
-class BackendController extends Controller
+class AuthController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
+
+
+
+    // 🔹 Show Login Page
+    public function loginForm()
+    {
+        return view('auth::login');
+    }
+
+    // 🔹 Handle Login
+    public function login(Request $request)
+    {
+        $credentials = $request->only('email', 'password');
+
+        if (Auth::attempt($credentials)) {
+            return redirect()->route('backend.dashboard');
+        }
+
+        return back()->with('error', 'Invalid email or password');
+    }
+
+    // 🔹 Logout
+    public function logout()
+    {
+        Auth::logout();
+        return redirect('/');
+    }
+
     public function index()
     {
-        return view('backend::dashboard');
+        return view('auth::index');
     }
 
     /**
@@ -20,7 +49,7 @@ class BackendController extends Controller
      */
     public function create()
     {
-        return view('backend::create');
+        return view('auth::create');
     }
 
     /**
@@ -35,7 +64,7 @@ class BackendController extends Controller
      */
     public function show($id)
     {
-        return view('backend::show');
+        return view('auth::show');
     }
 
     /**
@@ -43,7 +72,7 @@ class BackendController extends Controller
      */
     public function edit($id)
     {
-        return view('backend::edit');
+        return view('auth::edit');
     }
 
     /**

@@ -20,14 +20,14 @@
     <!-- Section: Main -->
     <li class="menu-header small text-uppercase"><span class="menu-header-text">dashboard</span></li>
     <li class="menu-item">
-      <a href="{{ route('dashboard') }}" class="menu-link">
+      <a href="{{ route('backend.dashboard') }}" class="menu-link">
         <i class="menu-icon ti ti-smart-home"></i>
         <div data-i18n="Dashboards">Dashboards</div>
 
       </a>
     </li>
 
-    <!-- page section  -->
+    <!-- page section 
     <li class="menu-header small text-uppercase"><span class="menu-header-text">pages</span></li>
     <li class="menu-item" id="laboratory_main_sub_menu">
       <a href="javascript:void(0);" class="menu-link menu-toggle">
@@ -90,14 +90,14 @@
         <i class="menu-icon ti ti-tag"></i>
         <div data-i18n="Offers">Offers</div>
       </a>
-    </li>
+    </li> -->
 
 
 
     <li class="menu-item" id="laboratory_main_sub_menu">
       <a href="javascript:void(0);" class="menu-link menu-toggle">
         <i class="menu-icon ti ti-user-cog"></i>
-        <div data-i18n="Administration"> Administration </div>
+        <div data-i18n="Users"> Users </div>
       </a>
       <ul class="menu-sub">
 

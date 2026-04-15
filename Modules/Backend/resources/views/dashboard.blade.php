@@ -1,4 +1,4 @@
-@extends('backend.layouts.backendlayouts')
+@extends('backend::layouts.backendlayouts')
 @section('title', 'Dashboard')
 @section('content')
     <div class="col-7">
@@ -58,7 +58,7 @@
                                     </div>
                                     <div>
                                         <strong>{{ $deal['name'] }}</strong>
-                                        <p class="mb-0 text-muted small">{{ $deal['email'] }}</p>
+                                        <p class="mb-0 text-muted smalsl">{{ $deal['email'] }}</p>
                                     </div>
                                 </div>
                                 <span class="fw-semibold">{{ $deal['amount'] }}</span>

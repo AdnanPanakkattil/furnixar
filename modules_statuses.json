@@ -1,5 +1,6 @@
 {
     "Courses": true,
     "Backend": true,
-    "Frontend": true
+    "Frontend": true,
+    "Auth": true
 }

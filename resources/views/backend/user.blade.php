@@ -1,19 +1,19 @@
 @extends('backend.layouts.backendlayouts')
 @section('title', 'User')
 @section('content')
-@push('styles')
-<link rel="stylesheet" href="{{ asset('page-css/patient.css') }}">
-@endpush
+    @push('styles')
+        <link rel="stylesheet" href="{{ asset('page-css/patient.css') }}">
+    @endpush
 
     <div>
-     
+
         <div class="mt-5">
 
             <div class="row" style="margin-left: 5px;">
 
                 <div class="col-12 divhead">
                     <div>
-                        <h5> user </h5>
+                        <h5> users Table </h5>
                     </div>
                 </div>
 
@@ -21,10 +21,20 @@
                     <div class="card-body">
 
                         <div class="mb-2">
-                            <button class="btn btn-primary me-5 mb-10 " type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                                filter<i class="menu-icon tf-icons ti ti-filter me-0 ms-2"></i>
-                            </button>
+                            <div class="mb-2 d-flex justify-content-between align-items-center">
+
+                                <!-- Left: Filter Button
+                                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                        filter<i class="menu-icon tf-icons ti ti-filter me-0 ms-2"></i>
+                                    </button> -->
+
+                                <!-- Right: Add Button -->
+                                <a href="your-add-url" class="btn btn-success">
+                                    <i class="ti ti-plus me-1"></i> Add Users
+                                </a>
+
+                            </div>
                             <div>
                                 <form class="dt_adv_search" method="GET">
                                     <div class="row">
@@ -148,28 +158,30 @@
                         </div>
                     </div>
                     <div class="card-datatable table-responsive">
-                        <table class="dt-advanced-search table service-common-table" id="pendingbilltable">
+                        <table class="dt-advanced-search table service-common-table" id="usertable">
                             <thead>
                                 <tr>
 
                                     <th> slno </th>
-                                    <th> invoice </th>
-                                    <th> p.name </th>
-                                    <th> provider </th>
-                                    <th> mobile </th>
-                                    <th> nationalId </th>
-                                    <th> Actions </th>
+                                    <th> Name </th>
+                                    <th> Email </th>
+                                    <th> Mobile </th>
+                                    <th> Gender </th>
+                                    <th> Active </th>
+                                    <th> Action </th>
+
                                 </tr>
                             </thead>
                             <tfoot>
                                 <tr>
                                     <th> slno </th>
-                                    <th> invoice </th>
-                                    <th> p.name </th>
-                                    <th> provider </th>
-                                    <th> mobile </th>
-                                    <th> nationalId </th>
-                                    <th> Actions </th>
+                                    <th> Name </th>
+                                    <th> Email </th>
+                                    <th> Mobile </th>
+                                    <th> Gender </th>
+                                    <th> Active </th>
+                                    <th> Action </th>
+
                                 </tr>
                             </tfoot>
 
@@ -211,8 +223,3 @@
 
 
 @endsection
-@push('scripts')
-    <script src="../../assets/vendor/libs/apex-charts/apexcharts.js"></script>
-    <script src="../../assets/js/main.js"></script>
-    <script src="../../assets/js/cards-statistics.js"></script>
-@endpush

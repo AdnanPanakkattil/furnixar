@@ -105,13 +105,13 @@
 
             <!-- / Menu -->
 
-            @include('backend.layouts.partials.sidebar')
+            @include('backend::layouts.partials.sidebar')
             <!-- Layout container -->
             <div class="layout-page">
                 <!-- Navbar -->
 
 
-                @include('backend.layouts.partials.topbar')
+                @include('backend::layouts.partials.topbar')
                 <!-- / Navbar -->
 
                 <!-- Content wrapper -->

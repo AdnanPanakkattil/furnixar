@@ -1,21 +1,21 @@
 <?php
 
-namespace Modules\Backend\Providers;
+namespace Modules\Auth\Providers;
 
 use Nwidart\Modules\Support\ModuleServiceProvider;
 use Illuminate\Console\Scheduling\Schedule;
 
-class BackendServiceProvider extends ModuleServiceProvider
+class AuthServiceProvider extends ModuleServiceProvider
 {
     /**
      * The name of the module.
      */
-    protected string $name = 'Backend';
+    protected string $name = 'Auth';
 
     /**
      * The lowercase version of the module name.
      */
-    protected string $nameLower = 'backend';
+    protected string $nameLower = 'auth';
 
     /**
      * Command classes to register.
@@ -43,11 +43,4 @@ class BackendServiceProvider extends ModuleServiceProvider
     // {
     //     $schedule->command('inspire')->hourly();
     // }
-    public function boot(): void
-{
-    $this->loadViewsFrom(
-        module_path($this->name, 'resources/views'),
-        'backend'
-    );
-}
 }
