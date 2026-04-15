@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Register - Furnixar</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
@@ -16,15 +16,17 @@
             margin: 0;
         }
 
-        .login-card {
+        .register-card {
             display: flex;
             min-height: 100vh;
             width: 100%;
         }
 
+        /* LEFT PANEL (Gradient & Illustration) */
         .left-panel {
             flex: 1;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             padding: 40px;
@@ -35,9 +37,22 @@
             max-width: 80%;
             height: auto;
             object-fit: contain;
+            margin-bottom: 20px;
+            transition: transform 0.5s ease;
         }
 
-   
+        .brand-logo {
+            font-size: 2.5rem;
+            font-weight: 900;
+            letter-spacing: 1px;
+        }
+
+        .brand-tagline {
+            opacity: 0.8;
+            font-size: 0.95rem;
+        }
+
+        /* RIGHT PANEL (Form) */
         .right-panel {
             flex: 1;
             background: #fff;
@@ -56,13 +71,11 @@
         .form-heading {
             font-size: 2rem;
             font-weight: 900;
-            margin-bottom: 10px;
+            margin-bottom: 5px;
             color: #333;
-            text-align: center;
         }
 
         .sub-text {
-            text-align: center;
             color: #777;
             margin-bottom: 30px;
             font-size: 0.95rem;
@@ -70,7 +83,7 @@
 
         .field-wrap {
             position: relative;
-            margin-bottom: 20px;
+            margin-bottom: 18px;
         }
 
         .field-icon {
@@ -83,30 +96,21 @@
 
         .form-input {
             width: 100%;
-            padding: 14px 15px 14px 45px;
+            padding: 13px 15px 13px 45px;
             border-radius: 10px;
             border: 1px solid #eee;
+            background: #f8f9ff;
             transition: 0.3s;
         }
 
         .form-input:focus {
+            background: #fff;
             border-color: #6366f1;
             box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.1);
             outline: none;
         }
 
-        .toggle-pass {
-            position: absolute;
-            right: 15px;
-            top: 50%;
-            transform: translateY(-50%);
-            border: none;
-            background: none;
-            cursor: pointer;
-            color: #999;
-        }
-
-        .btn-login {
+        .btn-register {
             width: 100%;
             padding: 14px;
             border-radius: 10px;
@@ -117,27 +121,21 @@
             font-size: 1rem;
             box-shadow: 0 4px 15px rgba(99, 102, 241, 0.3);
             transition: 0.3s;
+            margin-top: 10px;
         }
 
-        .btn-login:hover {
+        .btn-register:hover {
             opacity: 0.9;
             transform: translateY(-1px);
         }
 
-        .meta-row {
-            display: flex;
-            justify-content: space-between;
-            font-size: 0.9rem;
-            margin-bottom: 20px;
-        }
-
-        .register-row {
+        .login-row {
             text-align: center;
             margin-top: 25px;
             font-size: 0.9rem;
         }
 
-        .register-row a {
+        .login-row a {
             color: #6366f1;
             text-decoration: none;
             font-weight: 700;
@@ -145,20 +143,18 @@
 
         /* --- RESPONSIVENESS --- */
         @media (max-width: 992px) {
-            .left-panel {
-                padding: 20px;
-            }
-
             .left-panel img {
-                max-width: 95%;
+                max-width: 90%;
             }
         }
 
         @media (max-width: 768px) {
             .left-panel {
                 display: none;
-                /* Mobile-il image panel ozhivakkunnu */
+                /* Mobile screens-il illustration hide cheyyunnu */
             }
+
+        
 
             .form-container {
                 background: #fff;
@@ -172,24 +168,28 @@
 
 <body>
 
-    <div class="login-card">
+    <div class="register-card">
         <div class="left-panel">
-            <img src="{{ asset('assets/img/illustrations/login-page.jpg') }}" alt="Login Illustration">
+            <img src="{{ asset('assets/img/illustrations/login-page.jpg') }}"
+                alt="Register Illustration">
+            <div class="text-center">
+                <div class="brand-logo">Furnixar</div>
+                <div class="brand-tagline">Join our smart furniture community </div>
+            </div>
         </div>
 
         <div class="right-panel">
             <div class="form-container">
-                <h2 class="form-heading">Furnixar</h2>
-                <p class="sub-text">Please enter your details to login.</p>
+                <h2 class="form-heading">Create Account</h2>
+                <p class="sub-text">Enter your details to get started.</p>
 
-                @if(session('error'))
-                    <div class="alert alert-danger">
-                        {{ session('error') }}
-                    </div>
-                @endif
-
-                <form method="POST" action="{{ route('login') }}" id="loginForm">
+                <form method="POST" action="{{ route('register') }}" id="registerForm">
                     @csrf
+
+                    <div class="field-wrap">
+                        <i class="bi bi-person field-icon"></i>
+                        <input type="text" name="name" class="form-input" placeholder="Full Name" required>
+                    </div>
 
                     <div class="field-wrap">
                         <i class="bi bi-envelope field-icon"></i>
@@ -198,49 +198,33 @@
 
                     <div class="field-wrap">
                         <i class="bi bi-lock field-icon"></i>
-                        <input type="password" id="password" name="password" class="form-input" placeholder="Password"
-                            required>
-                        <button type="button" class="toggle-pass" onclick="togglePassword()">
-                            <i class="bi bi-eye-slash" id="eyeIcon"></i>
-                        </button>
+                        <input type="password" name="password" class="form-input" placeholder="Password" required>
                     </div>
 
-                    <div class="meta-row">
-                        <label class="d-flex align-items-center" style="cursor:pointer">
-                            <input type="checkbox" name="remember" class="me-2"> Remember me
-                        </label>
-                        <a href="#" class="text-decoration-none" style="color: #6366f1;">Forgot Password?</a>
+                    <div class="field-wrap">
+                        <i class="bi bi-shield-check field-icon"></i>
+                        <input type="password" name="password_confirmation" class="form-input"
+                            placeholder="Confirm Password" required>
                     </div>
 
-                    <button type="submit" class="btn-login" id="loginBtn">
-                        <span id="btnText">Login</span>
+                    <button type="submit" class="btn-register" id="registerBtn">
+                        <span id="btnText">Register Now</span>
                         <div id="btnLoader" class="spinner-border spinner-border-sm d-none"></div>
                     </button>
                 </form>
 
-                <div class="register-row">
-                    Don't have an account?
-                    <a href="{{ route('register') }}">Create Account</a>
+                <div class="login-row">
+                    Already have an account?
+                    <a href="{{ route('login') }}">Login Here</a>
                 </div>
             </div>
         </div>
     </div>
 
     <script>
-        function togglePassword() {
-            const pass = document.getElementById('password');
-            const icon = document.getElementById('eyeIcon');
-            if (pass.type === "password") {
-                pass.type = "text";
-                icon.className = "bi bi-eye";
-            } else {
-                pass.type = "password";
-                icon.className = "bi bi-eye-slash";
-            }
-        }
-
-        document.getElementById("loginForm").addEventListener("submit", function () {
-            const btn = document.getElementById("loginBtn");
+        // Form submission loader
+        document.getElementById("registerForm").addEventListener("submit", function () {
+            const btn = document.getElementById("registerBtn");
             const text = document.getElementById("btnText");
             const loader = document.getElementById("btnLoader");
 

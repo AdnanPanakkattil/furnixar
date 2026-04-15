@@ -3,15 +3,14 @@
 namespace Modules\Auth\Http\Controllers;
 
 use App\Http\Controllers\Controller;
+use App\Models\User;
 use Auth;
+use Hash;
 use Illuminate\Http\Request;
+use Password;
 
 class AuthController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     */
-
 
 
     // 🔹 Show Login Page
@@ -32,6 +31,30 @@ class AuthController extends Controller
         return back()->with('error', 'Invalid email or password');
     }
 
+    public function registerForm()
+    {
+        return view('auth::register');
+    }
+
+    public function register(Request $request)
+    {
+        $user = User::create([
+            'name' => $request->name,
+            'email' => $request->email,
+            'password' => Hash::make($request->password),
+        ]);
+
+        Auth::login($user);
+
+        return redirect()->route('auth::login');
+    }
+
+    public function forgotForm()
+    {
+        return view('auth::forgot-password');
+    }
+
+
     // 🔹 Logout
     public function logout()
     {
@@ -39,53 +62,4 @@ class AuthController extends Controller
         return redirect('/');
     }
 
-    public function index()
-    {
-        return view('auth::index');
-    }
-
-    /**
-     * Show the form for creating a new resource.
-     */
-    public function create()
-    {
-        return view('auth::create');
-    }
-
-    /**
-     * Store a newly created resource in storage.
-     */
-    public function store(Request $request)
-    {
-    }
-
-    /**
-     * Show the specified resource.
-     */
-    public function show($id)
-    {
-        return view('auth::show');
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     */
-    public function edit($id)
-    {
-        return view('auth::edit');
-    }
-
-    /**
-     * Update the specified resource in storage.
-     */
-    public function update(Request $request, $id)
-    {
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     */
-    public function destroy($id)
-    {
-    }
 }

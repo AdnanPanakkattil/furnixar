@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\Route;
 // });
 
 Route::get('/', function () {
-    return redirect('/admin/dashboard');
+    return redirect('/login');
 });
 
 // Route::get('cart', function () {
