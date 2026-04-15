@@ -212,7 +212,6 @@
 
 @endsection
 @push('scripts')
-    <script src="{{ asset('page-js/pending.js') }}"></script>
     <script src="../../assets/vendor/libs/apex-charts/apexcharts.js"></script>
     <script src="../../assets/js/main.js"></script>
     <script src="../../assets/js/cards-statistics.js"></script>

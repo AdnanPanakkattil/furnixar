@@ -2533,7 +2533,7 @@ progress {
   background-color: transparent;
   border-color: #845adf;
   outline: 0;
-  box-shadow: 0 2px 6px 0 rgb(33, 255, 8 ,  0.4);;
+  box-shadow: 0 2px 6px 0 #675dd8ee;
 }
 .form-control::-webkit-date-and-time-value {
   min-width: 85px;
@@ -2680,7 +2680,7 @@ textarea.form-control-lg {
 .form-select:focus {
   border-color: #845adf;
   outline: 0;
-  box-shadow: 0 2px 6px 0 rgb(33, 255, 8 ,  0.4);;
+  box-shadow: 0 2px 6px 0 #675dd8ee;
 }
 .form-select[multiple], .form-select[size]:not([size="1"]) {
   padding-right: 0.9375rem;
@@ -2854,10 +2854,10 @@ textarea.form-control-lg {
   outline: 0;
 }
 .form-range:focus::-webkit-slider-thumb {
-  box-shadow: 0 0 0 1px #f8f7fa, 0 2px 6px 0 rgb(33, 255, 8 ,  0.4);;
+  box-shadow: 0 0 0 1px #f8f7fa, 0 2px 6px 0 #675dd8ee;
 }
 .form-range:focus::-moz-range-thumb {
-  box-shadow: 0 0 0 1px #f8f7fa, 0 2px 6px 0 rgb(33, 255, 8 ,  0.4);;
+  box-shadow: 0 0 0 1px #f8f7fa, 0 2px 6px 0 #675dd8ee;
 }
 .form-range::-moz-focus-outer {
   border: 0;
@@ -11726,7 +11726,7 @@ html:not([dir=rtl]) .form-select.form-select-sm:focus, html:not([dir=rtl]) .was-
   border-color: #82808b;
 }
 .input-group:focus-within {
-  box-shadow: 0 2px 6px 0 rgb(33, 255, 8 ,  0.4);;
+  box-shadow: 0 2px 6px 0 #675dd8ee;
 }
 .input-group:focus-within .form-control,
 .input-group:focus-within .input-group-text {

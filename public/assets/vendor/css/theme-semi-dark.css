@@ -107,7 +107,7 @@ a.bg-primary:hover, a.bg-primary:focus {
 }
 
 .bg-primary.bg-glow {
-  box-shadow: 0px 2px 3px 0px rgb(33, 255, 8 ,  0.4);;
+  box-shadow: 0px 2px 3px 0px #675dd8ee;
 }
 
 .page-item .page-link:hover, .page-item .page-link:focus,
@@ -119,7 +119,7 @@ a.bg-primary:hover, a.bg-primary:focus {
 
 .page-item.active .page-link,
 .pagination li.active > a:not(.page-link) {
-  box-shadow: 0 0.125rem 0.375rem 0 rgb(33, 255, 8 ,  0.4);;
+  box-shadow: 0 0.125rem 0.375rem 0 #675dd8ee;
 }
 .page-item.active .page-link, .page-item.active .page-link:hover, .page-item.active .page-link:focus,
 .pagination li.active > a:not(.page-link),
@@ -154,7 +154,7 @@ a.bg-primary:hover, a.bg-primary:focus {
 }
 
 .progress-bar {
-  box-shadow: 0 0.125rem 0.375rem 0 rgb(33, 255, 8 ,  0.4);;
+  box-shadow: 0 0.125rem 0.375rem 0 #675dd8ee;
 }
 
 .modal-onboarding .carousel-indicators [data-bs-target] {
@@ -335,7 +335,7 @@ button.list-group-item-primary.active {
   border-color: #845adf;
 }
 .btn-primary.btn[class*=btn-]:not([class*=btn-label-]):not([class*=btn-outline-]):not([class*=btn-text-]):not(.btn-icon):not(:disabled):not(.disabled) {
-  box-shadow: 0 0.125rem 0.375rem 0 rgb(33, 255, 8 ,  0.4);;
+  box-shadow: 0 0.125rem 0.375rem 0 #675dd8ee;
 }
 .btn-primary:hover {
   color: #fff !important;
@@ -500,7 +500,7 @@ button.list-group-item-primary.active {
 }
 
 .nav-pills .nav-link.active {
-  box-shadow: 0 0.125rem 0.375rem 0 rgb(33, 255, 8 ,  0.4);;
+  box-shadow: 0 0.125rem 0.375rem 0 #675dd8ee;
 }
 .nav-pills .nav-link.active, .nav-pills .nav-link.active:hover, .nav-pills .nav-link.active:focus {
   background-color: #845adf;
@@ -552,12 +552,12 @@ button.list-group-item-primary.active {
 .form-check-input:checked {
   background-color: #845adf;
   border-color: #845adf;
-  box-shadow: 0 2px 6px 0 rgb(33, 255, 8 ,  0.4);;
+  box-shadow: 0 2px 6px 0 #675dd8ee;
 }
 .form-check-input[type=checkbox]:indeterminate {
   background-color: #845adf;
   border-color: #845adf;
-  box-shadow: 0 2px 6px 0 rgb(33, 255, 8 ,  0.4);;
+  box-shadow: 0 2px 6px 0 #675dd8ee;
 }
 
 .custom-option.checked {
@@ -594,13 +594,13 @@ button.list-group-item-primary.active {
 .switch-input:checked ~ .switch-toggle-slider {
   background: #845adf;
   color: #fff;
-  box-shadow: 0 2px 6px 0 rgb(33, 255, 8 ,  0.4);;
+  box-shadow: 0 2px 6px 0 #675dd8ee;
 }
 
 .switch-primary.switch .switch-input:checked ~ .switch-toggle-slider {
   background: #845adf;
   color: #fff;
-  box-shadow: 0 2px 6px 0 rgb(33, 255, 8 ,  0.4);;
+  box-shadow: 0 2px 6px 0 #675dd8ee;
 }
 
 .timeline .timeline-point-primary {
@@ -927,7 +927,7 @@ table.dataTable.dtr-column > tbody > tr > th.control:before {
 .datepicker table tr td span.active.disabled, .datepicker table tr td.range-start, .datepicker table tr td.range-end {
   background: #845adf !important;
   color: #fff !important;
-  box-shadow: 0 0.125rem 0.375rem 0 rgb(33, 255, 8 ,  0.4);;
+  box-shadow: 0 0.125rem 0.375rem 0 #675dd8ee;
 }
 .datepicker table tr td.range, .datepicker table tr td.range.highlighted, .datepicker table tr td.range.today {
   color: #ffffff !important;
@@ -959,13 +959,13 @@ table.dataTable.dtr-column > tbody > tr > th.control:before {
   color: #fff !important;
   background: #845adf !important;
   border-color: #ffffff !important;
-  box-shadow: 0 0.125rem 0.375rem 0 rgb(33, 255, 8 ,  0.4);;
+  box-shadow: 0 0.125rem 0.375rem 0 #675dd8ee;
 }
 
 .daterangepicker td.active:not(.off) {
   background: #845adf !important;
   color: #fff;
-  box-shadow: 0 0.125rem 0.375rem 0 rgb(33, 255, 8 ,  0.4);;
+  box-shadow: 0 0.125rem 0.375rem 0 #675dd8ee;
 }
 
 .daterangepicker .start-date:not(.end-date):not(.off),
@@ -1200,7 +1200,7 @@ li.ui-timepicker-selected,
   border-color: #845adf;
 }
 .shepherd-element .shepherd-button:not(:disabled).btn-primary.btn[class*=btn-]:not([class*=btn-label-]):not([class*=btn-outline-]):not([class*=btn-text-]):not(.btn-icon):not(:disabled):not(.disabled) {
-  box-shadow: 0 0.125rem 0.375rem 0 rgb(33, 255, 8 ,  0.4);;
+  box-shadow: 0 0.125rem 0.375rem 0 #675dd8ee;
 }
 .shepherd-element .shepherd-button:not(:disabled).btn-primary:hover {
   color: #fff !important;
@@ -1271,7 +1271,7 @@ li.ui-timepicker-selected,
 .bs-stepper .step.active .bs-stepper-circle {
   background-color: #845adf;
   color: #fff;
-  box-shadow: 0 0.125rem 0.375rem 0 rgb(33, 255, 8 ,  0.4);;
+  box-shadow: 0 0.125rem 0.375rem 0 #675dd8ee;
 }
 .bs-stepper .step.active .bs-stepper-icon svg {
   fill: #845adf !important;
@@ -1449,7 +1449,7 @@ li.ui-timepicker-selected,
 }
 .bg-menu-theme.menu-vertical .menu-item.active > .menu-link:not(.menu-toggle) {
   background: linear-gradient(270deg, rgba(0, 141, 4, 0.7) 0%, #845adf 100%);
-  box-shadow: 0px 2px 6px 0px rgb(33, 255, 8 ,  0.4);;
+  box-shadow: 0px 2px 6px 0px #675dd8ee;
   color: #fff !important;
 }
 .bg-menu-theme.menu-vertical .menu-item.active > .menu-link:not(.menu-toggle).menu-toggle::after {
@@ -1458,7 +1458,7 @@ li.ui-timepicker-selected,
 .bg-menu-theme.menu-horizontal .menu-inner > .menu-item.active > .menu-link.menu-toggle {
   background: linear-gradient(270deg, rgba(0, 141, 4, 0.7) 0%, #845adf 100%);
   color: #fff !important;
-  box-shadow: 0px 2px 6px 0px rgb(33, 255, 8 ,  0.4);;
+  box-shadow: 0px 2px 6px 0px #675dd8ee;
 }
 .bg-menu-theme.menu-horizontal .menu-inner > .menu-item.active > .menu-link.menu-toggle.menu-toggle::after {
   color: #fff !important;

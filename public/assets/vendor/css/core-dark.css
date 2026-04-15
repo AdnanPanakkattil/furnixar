@@ -2675,7 +2675,7 @@ textarea.form-control-lg {
 .form-select:focus {
   border-color: #845adf;
   outline: 0;
-  box-shadow: 0 2px 6px 0 rgb(33, 255, 8 ,  0.4);;
+  box-shadow: 0 2px 6px 0 #675dd8ee;
 }
 .form-select[multiple], .form-select[size]:not([size="1"]) {
   padding-right: 0.9375rem;
@@ -2849,10 +2849,10 @@ textarea.form-control-lg {
   outline: 0;
 }
 .form-range:focus::-webkit-slider-thumb {
-  box-shadow: 0 0 0 1px #282828, 0 2px 6px 0 rgb(33, 255, 8 ,  0.4);;
+  box-shadow: 0 0 0 1px #282828, 0 2px 6px 0 #675dd8ee;
 }
 .form-range:focus::-moz-range-thumb {
-  box-shadow: 0 0 0 1px #282828, 0 2px 6px 0 rgb(33, 255, 8 ,  0.4);;
+  box-shadow: 0 0 0 1px #282828, 0 2px 6px 0 #675dd8ee;
 }
 .form-range::-moz-focus-outer {
   border: 0;
@@ -9296,7 +9296,7 @@ div:not(.nav-align-left):not(.nav-align-right) > .nav-tabs {
 .nav-pills .nav-item .nav-link:not(.active):hover {
   border-bottom: none;
   padding-bottom: 0.5435rem;
-  background-color: #31813b;
+  background-color: #845adf;
 }
 .nav-pills ~ .tab-content {
   box-shadow: 0 0.1875rem 0.75rem 0 rgba(19, 17, 32, 0.2);
@@ -11244,7 +11244,7 @@ select.form-select option {
   border-color: #9a9ab0;
 }
 .input-group:focus-within {
-  box-shadow: 0 2px 6px 0 rgb(33, 255, 8 ,  0.4);;
+  box-shadow: 0 2px 6px 0 #675dd8ee;
 }
 .input-group:focus-within .form-control,
 .input-group:focus-within .input-group-text {
