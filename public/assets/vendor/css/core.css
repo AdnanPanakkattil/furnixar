@@ -25024,6 +25024,7 @@ html:not(.layout-menu-fixed) .menu-inner-shadow {
   flex: 1 1 auto;
   flex-direction: column;
   justify-content: space-between;
+  padding-right: 100px;
 }
 
 .content-backdrop {

@@ -7435,6 +7435,7 @@ a.invert-bg-dark:hover, a.invert-bg-dark:focus {
 
 .container-p-y:not([class^=pt-]):not([class*=" pt-"]) {
   padding-top: 1.5rem !important;
+  padding-right: 0px !important;
 }
 .container-p-y:not([class^=pb-]):not([class*=" pb-"]) {
   padding-bottom: 1.5rem !important;
@@ -28622,12 +28623,12 @@ html:not([dir=rtl]) .menu-toggle::after {
 .content-footer {
   flex: 0 0 auto;
 }
-
 .layout-page {
-  display: flex;
-  flex: 1 1 auto;
-  align-items: stretch;
-  padding: 0;
+    display: flex;
+    flex: 1 1 auto;
+    align-items: stretch;
+    padding: 0;
+    max-width: 100%; 
 }
 .layout-without-menu .layout-page {
   padding-right: 0 !important;
@@ -28635,11 +28636,10 @@ html:not([dir=rtl]) .menu-toggle::after {
 }
 
 .content-wrapper {
-  display: flex;
-  align-items: stretch;
-  flex: 1 1 auto;
-  flex-direction: column;
-  justify-content: space-between;
+    width: 100% ;
+    overflow-x: hidden;
+    flex-grow: 1;
+    padding-right: 0px !important;
 }
 
 .content-backdrop {
