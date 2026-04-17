@@ -451,7 +451,7 @@
             color: #fff;
         }
 
-        .-75 {
+        .hero-card-text p{
             color: rgba(255, 255, 255, 0.78) !important;
         }
 
@@ -498,42 +498,42 @@
         }
 
         /* Compact Stat Cards */
-        . {
+        .stat-card {
             border: 1px solid #e7e7e7;
         }
 
-        . .card-body {
+        .card-body {
             padding: 1.25rem;
         }
 
-        . .card-footer {
+        .card-footer {
             padding: 0.75rem 1.25rem !important;
         }
 
-        . .stat-sparkline {
+        .card-body .stat-sparkline {
             width: 70px;
             height: 38px;
             display: inline-block;
             overflow: visible;
         }
 
-        . .stat-sparkline svg {
+        .card-body .stat-sparkline svg {
             width: 100%;
             height: 100%;
             display: block;
         }
 
-        . .avatar {
+        .card-body .avatar {
             width: 45px;
             height: 45px;
         }
 
-        . h4 {
+        .card-body h4 {
             font-size: 1.25rem;
             margin: 0 !important;
         }
 
-        . .card-body p {
+        .card-body p {
             font-size: 0.85rem;
         }
 
