@@ -13,7 +13,7 @@
     </a>
   </div>
 
-    <div class="brand-divider"></div>
+  <div class="brand-divider"></div>
 
 
   <ul class="menu-inner py-1">
@@ -27,72 +27,46 @@
       </a>
     </li>
 
-    <!-- page section 
-    <li class="menu-header small text-uppercase"><span class="menu-header-text">pages</span></li>
     <li class="menu-item" id="laboratory_main_sub_menu">
       <a href="javascript:void(0);" class="menu-link menu-toggle">
-        <i class="menu-icon ti ti-layout-grid"></i>
-        <div data-i18n="Category"> Category </div>
+      <i class="menu-icon ti ti-shopping-bag"></i>
+        <div data-i18n="Product Management"> Product Management </div>
       </a>
       <ul class="menu-sub">
 
         <li class="menu-item" id="laboratory_sub_menu">
           <a href="" class="menu-link">
-            <div data-i18n="Sofas">Sofas</div>
-          </a>
-        </li>
-
-        <li class="menu-item" id="laboratory-package_sub_menu">
-          <a href="" class="menu-link">
-            <div data-i18n="Wardrobes">Wardrobes</div>
-          </a>
-        </li>
-        <li class="menu-item" id="laboratory-package_sub_menu">
-          <a href="" class="menu-link">
-            <div data-i18n="Chairs">Chairs</div>
-          </a>
-        </li>
-        <li class="menu-item" id="laboratory-package_sub_menu">
-          <a href="" class="menu-link">
-            <div data-i18n="Desks">Desks</div>
-          </a>
-        </li>
-        <li class="menu-item" id="laboratory-package_sub_menu">
-          <a href="" class="menu-link">
-            <div data-i18n="Tables">Tables</div>
-          </a>
-        </li>
-        <li class="menu-item" id="laboratory-package_sub_menu">
-          <a href="" class="menu-link">
-            <div data-i18n="Lighting">Lighting</div>
-          </a>
-        </li>
-        <li class="menu-item" id="laboratory-package_sub_menu">
-          <a href="" class="menu-link">
-            <div data-i18n="Cabinets">Cabinets</div>
-          </a>
-        </li>
-        <li class="menu-item" id="laboratory-package_sub_menu">
-          <a href="" class="menu-link">
-            <div data-i18n="Office">Office</div>
-          </a>
-        </li>
-        <li class="menu-item" id="laboratory-package_sub_menu">
-          <a href="" class="menu-link">
-            <div data-i18n="Accessories">Accessories</div>
+            <div data-i18n="Product">Product</div>
           </a>
         </li>
 
       </ul>
     </li>
+
+
+
     <li class="menu-item">
       <a href="javascript:void(0);" class="menu-link">
-        <i class="menu-icon ti ti-tag"></i>
-        <div data-i18n="Offers">Offers</div>
+       <i class="menu-icon ti ti-category"></i>
+        <div data-i18n="Catogeries">Catogeries</div>
       </a>
-    </li> -->
+    </li>
 
 
+    <li class="menu-item" id="laboratory_main_sub_menu">
+      <a href="javascript:void(0);" class="menu-link menu-toggle">
+       <i class="menu-icon ti ti-package"></i>
+        <div data-i18n="Order Management"> Order Management </div>
+      </a>
+      <ul class="menu-sub">
+
+        <li class="menu-item" id="laboratory_sub_menu">
+          <a href="" class="menu-link">
+            <div data-i18n="Order">Order</div>
+          </a>
+        </li>
+      </ul>
+    </li>
 
     <li class="menu-item" id="laboratory_main_sub_menu">
       <a href="javascript:void(0);" class="menu-link menu-toggle">
@@ -102,14 +76,41 @@
       <ul class="menu-sub">
 
         <li class="menu-item" id="laboratory_sub_menu">
-          <a href="{{ url('user') }}" class="menu-link">
+          <a href="" class="menu-link">
             <div data-i18n="User">User</div>
           </a>
         </li>
 
       </ul>
     </li>
+
+    <li class="menu-item">
+      <a href="javascript:void(0);" class="menu-link">
+        <i class="menu-icon ti ti-tag"></i>
+        <div data-i18n="Offers">Offers</div>
+      </a>
+    </li>
+
+    <li class="menu-item">
+      <a href="javascript:void(0);" class="menu-link">
+       <i class="menu-icon ti ti-star"></i>
+        <div data-i18n="Review management">Review management</div>
+      </a>
+    </li>
+
+    <li class="menu-item">
+      <a href="javascript:void(0);" class="menu-link">
+       <i class="menu-icon ti ti-truck"></i>
+
+       
+        <div data-i18n="Shipping Management">Shipping Management</div>
+      </a>
+    </li>
+
+
+
   </ul>
+
 
 
 </aside>
