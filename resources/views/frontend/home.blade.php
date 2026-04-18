@@ -30,6 +30,7 @@
                 <p>Designed for Living, Built to Last.</p>
                 <a href="#" class="btn-carousel">Explore Collection</a>
             </div>
+            
         </div>
         <div class="carousel-item">
             <img src="{{ asset('assets/carousel/carousel3.jpg') }}" alt="Slide 3">
