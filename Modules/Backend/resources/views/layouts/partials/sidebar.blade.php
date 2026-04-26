@@ -46,9 +46,9 @@
 
 
     <li class="menu-item">
-      <a href="javascript:void(0);" class="menu-link">
+      <a href="{{ route('backend.category') }}" class="menu-link">
        <i class="menu-icon ti ti-category"></i>
-        <div data-i18n="Catogeries">Catogeries</div>
+        <div data-i18n="Category">Category</div>
       </a>
     </li>
 

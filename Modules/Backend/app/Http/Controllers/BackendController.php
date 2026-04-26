@@ -14,6 +14,10 @@ class BackendController extends Controller
     {
         return view('backend::dashboard');
     }
+    public function category()
+    {
+        return view('backend::category');
+    }
 
     /**
      * Show the form for creating a new resource.
