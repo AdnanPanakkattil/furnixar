@@ -87,7 +87,7 @@
   --bs-link-color: #845adf;
   --bs-link-color-rgb: 115, 103, 240;
   --bs-link-decoration: none;
-  --bs-link-hover-color: #685dd8;
+  --bs-link-hover-color: #845adf;
   --bs-link-hover-color-rgb: 104, 93, 216;
   --bs-code-color: #e83e8c;
   --bs-highlight-color: #acabc1;
@@ -2249,7 +2249,7 @@ progress {
   --bs-table-striped-color: var(--bs-body-color);
   --bs-table-striped-bg: #3a3d53;
   --bs-table-active-color: #acabc1;
-  --bs-table-active-bg: rgba(115, 103, 240, 0.08);
+  --bs-table-active-bg: #845adf;
   --bs-table-hover-color: var(--bs-body-color);
   --bs-table-hover-bg: rgba(225, 222, 245, 0.06);
   width: 100%;

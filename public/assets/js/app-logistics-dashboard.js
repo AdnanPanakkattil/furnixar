@@ -103,7 +103,7 @@
         strokeDashArray: 8,
         borderColor
       },
-      colors: ['#4099FF', '#7367F0', '#00CFE8'],
+      colors: ['#4099FF', '#845adf', '#00CFE8'],
       fill: {
         opacity: [0, 0, 0.08]
       },
@@ -208,7 +208,7 @@
       labels: ['Mobile', 'Desktop', 'Laptop', 'Tablet'],
       series: [1624, 1267, 1153, 679],
       colors: [
-        '#7367F0',
+        '#845adf',
         '#00CFE8',
         '#FF9F43',
         '#28C76F'

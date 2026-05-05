@@ -348,7 +348,7 @@ html:not([dir=rtl]) .daterangepicker .drp-calendar.right {
 }
 .light-style .daterangepicker td.available:not(.active):hover,
 .light-style .daterangepicker th.available:hover {
-  background-color: rgba(47, 43, 61, 0.06);
+  background-color: #845adf;
 }
 .light-style .daterangepicker td.off {
   color: #acaab1;
@@ -362,7 +362,7 @@ html:not([dir=rtl]) .daterangepicker .drp-calendar.right {
 }
 .light-style .daterangepicker .calendar-table .next,
 .light-style .daterangepicker .calendar-table .prev {
-  background-color: rgba(47, 43, 61, 0.06);
+  background-color: #845adf;
 }
 .light-style .daterangepicker .calendar-table .next span,
 .light-style .daterangepicker .calendar-table .prev span {

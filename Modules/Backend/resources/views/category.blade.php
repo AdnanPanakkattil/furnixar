@@ -1,16 +1,11 @@
 @extends('backend::layouts.backendlayouts')
 @section('title', 'Dashboard')
 @section('content')
-    @push('styles')
-        <link rel="stylesheet" href="{{ asset('page-css/custom.css') }}">
-        <link rel="stylesheet" href="{{ asset('page-css/patient.css') }}">
-    @endpush
 
-    
-    <div class="mt-5">
+    <div>
         <div class="col-12 divhead">
             <div>
-                <h4> Catogerys </h4>
+                <h4> Categories </h4>
 
             </div>
             <!-- <div id="add_new_service_div" >
@@ -18,7 +13,7 @@
                                       </div> -->
 
         </div>
-        <div class="card" style="zoom: 80%;">
+        <div class="card">
             <h5 class="card-header"></h5>
             <div class="card-body">
 

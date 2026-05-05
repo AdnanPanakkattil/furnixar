@@ -346,7 +346,7 @@
   color: #6d6b77;
 }
 .light-style .bs-stepper .bs-stepper-header .step:not(.active) .bs-stepper-circle {
-  background-color: rgba(47, 43, 61, 0.06);
+  background-color: #845adf;
   color: #444050;
 }
 .light-style .bs-stepper .bs-stepper-header .step.crossed .step-trigger .bs-stepper-label .bs-stepper-subtitle,

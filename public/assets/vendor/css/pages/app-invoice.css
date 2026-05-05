@@ -26,7 +26,7 @@
 .invoice-preview .invoice-preview-header,
 .invoice-edit .invoice-preview-header,
 .invoice-add .invoice-preview-header {
-  background-color: rgba(47, 43, 61, 0.06);
+  background-color: #845adf;
 }
 
 .dark-style .invoice-preview .invoice-preview-header,

@@ -100,7 +100,7 @@
                             <div class="text-end ">
                                 <div class="stat-sparkline mb-2">
                                     <svg viewBox="0 0 120 50" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M 0 30 Q 15 15 30 20 T 60 25 T 90 15 T 120 25" fill="none" stroke="#7367F0"
+                                        <path d="M 0 30 Q 15 15 30 20 T 60 25 T 90 15 T 120 25" fill="none" stroke="#845adf"
                                             stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
                                     </svg>
                                 </div>
@@ -574,7 +574,7 @@
         }
 
         .deals-progress-bar--primary {
-            background: #7367F0;
+            background: #845adf;
         }
 
         .deals-progress-bar--info {

@@ -53,8 +53,7 @@
 
     <!-- Page CSS -->
     <link rel="stylesheet" href="{{ asset('assets/vendor/css/pages/cards-advance.css')}}" />
-
-
+    <link rel="stylesheet" href="{{ asset('css/furnixar-theme.css')}}" />
 
     <!-- Helpers -->
     <script src="{{ asset('assets/vendor/js/helpers.js')}}"></script>

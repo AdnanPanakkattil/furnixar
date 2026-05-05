@@ -17,7 +17,7 @@
                     </div>
                 </div>
 
-                <div class="card" style="zoom: 80%;">
+                <div class="card">
                     <div class="card-body">
 
                         <div class="mb-2">
