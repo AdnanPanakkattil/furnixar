@@ -6,78 +6,7 @@
         <link rel="stylesheet" href="{{ asset('page-css/patient.css') }}">
     @endpush
 
-    <div class="col-md-12" style="zoom: 80% !important">
-        <div class="card h-100">
-            <div class="card-header d-flex justify-content-between">
-                <h6 class="card-title mb-0"> Category daily overview </h6>
-                <small class="text-muted"> today </small>
-            </div>
-            <div class="card-body d-flex align-items-end pb-0">
-                <div class="w-100">
-                    <div class="row gy-3">
-
-                        <div class="row">
-
-                            <!-- Total Category -->
-                            <div class="col">
-                                <div class="d-flex align-items-center">
-                                    <div class="badge rounded bg-label-info  me-4 p-2">
-                                        <i class="ti ti-calendar-time ti-lg"></i>
-                                    </div>
-                                    <div class="card-info">
-                                        <h5 class="mb-0" id="today_category">0</h5>
-                                        <h6> today </h6>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Total Pending -->
-                            <div class="col">
-                                <div class="d-flex align-items-center">
-                                    <div class="badge rounded bg-label-primary me-4 p-2">
-                                        <i class="ti ti-clock-hour-4 ti-lg"></i>
-                                    </div>
-                                    <div class="card-info">
-                                        <h5 class="mb-0" id="pending">0</h5>
-                                        <h6> Active </h6>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col">
-                                <div class="d-flex align-items-center">
-                                    <div class="badge rounded bg-label-primary me-4 p-2">
-                                        <i class="ti ti-clock-hour-4 ti-lg"></i>
-                                    </div>
-                                    <div class="card-info">
-                                        <h5 class="mb-0" id="pending">0</h5>
-                                        <h6> Total category</h6>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col">
-                                <div class="d-flex align-items-center">
-                                    <div class="badge rounded bg-label-primary me-4 p-2">
-                                        <i class="ti ti-clock-hour-4 ti-lg"></i>
-                                    </div>
-                                    <div class="card-info">
-                                        <h5 class="mb-0" id="pending">0</h5>
-                                        <h6> In Active </h6>
-                                    </div>
-                                </div>
-                            </div>
-
-
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id="subscriberGained"></div>
-        </div>
-    </div>
-
+    
     <div class="mt-5">
         <div class="col-12 divhead">
             <div>
@@ -180,7 +109,7 @@
 
             </div>
             <div class="card-datatable table-responsive">
-                <table class="dt-advanced-search table service-common-table" id="appointment_report_table">
+                <table class="dt-advanced-search table service-common-table">
                     <thead>
                         <tr>
 

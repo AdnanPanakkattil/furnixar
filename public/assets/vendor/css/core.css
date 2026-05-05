@@ -24634,7 +24634,7 @@ html:not(.layout-menu-fixed) .menu-inner-shadow {
 .menu-collapsed:not(:hover) .menu-inner > .menu-header,
 .menu-collapsed:not(:hover) .menu-block {
   position: relative;
-  margin-left: 4.375rem;
+  /* margin-left: 4.375rem; */
   padding-right: 1rem;
   padding-left: 0.5rem;
   width: 16.25rem;
@@ -25024,7 +25024,7 @@ html:not(.layout-menu-fixed) .menu-inner-shadow {
   flex: 1 1 auto;
   flex-direction: column;
   justify-content: space-between;
-  padding-right: 100px;
+  /* padding-right: 100px; */
 }
 
 .content-backdrop {
